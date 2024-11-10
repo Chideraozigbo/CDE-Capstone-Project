@@ -1,0 +1,41 @@
+name: Code Linting
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11.5'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8 pylint black isort
+        pip install -r requirements.txt
+        
+    - name: Check code formatting with Black
+      run: |
+        black scripts dags main.py --check --diff
+
+    - name: Sort imports with isort
+      run: |
+        isort scripts dags main.py --check --diff
+
+    - name: Lint with flake8
+      run: |
+        flake8 scripts dags main.py --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 scripts dags main.py --count --exit-zero --max-complexity=10 --max-line-length=120 --statistics
+
+    - name: Analyze with Pylint
+      run: |
+        pylint scripts dags main.py --disable=C0111,C0114,C0115,C0116
