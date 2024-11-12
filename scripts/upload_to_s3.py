@@ -30,7 +30,12 @@ def upload_to_s3(json_path, bucket_name, object_name=None):
         )
         s3_client = session.client('s3')
         s3_client.upload_file(json_path, bucket_name, object_name)
-        log(f'Success: File {json_path} uploaded to {bucket_name} as {object_name}')
+        log(
+            f"""
+            Success: File {json_path} uploaded to {bucket_name} as
+            {object_name}
+            """
+            )
         return True
 
     except ClientError as e:
