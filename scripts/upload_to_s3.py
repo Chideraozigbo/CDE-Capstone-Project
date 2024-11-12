@@ -1,12 +1,12 @@
 import boto3
 from botocore.exceptions import ClientError
 import configparser
-from scripts.extract import log
+from extract import log
 import os
 
 
 # constants
-base_dir = '/Users/user/Documents/CDE-Capstone-Project/'
+base_dir = os.getcwd() + '/'
 config_dir = os.path.join(base_dir, 'credentials/config.ini')
 config = configparser.ConfigParser()
 config.read(config_dir)
@@ -16,15 +16,15 @@ ACCESS_KEY_ID = config['AWS']['ACCESS_KEY_ID' ]
 SECRET_ACCESS_KEY = config['AWS']['SECRET_ACCESS_KEY' ]
 
 
-def upload_to_s3(file_path, bucket_name, object_name=None):
-    if not os.path.exists(file_path):
-        log(f'Error: File {file_path} does not exist.')
+def upload_to_s3(json_path, bucket_name, object_name=None):
+    if not os.path.exists(json_path):
+        log(f'Error: File {json_path} does not exist.')
         return False
     
-    log(f'Starting the Load Phase for {file_path}')
+    log(f'Starting the Load Phase for {json_path}')
     
     if object_name is None:
-        object_name = os.path.basename(file_path)
+        object_name = os.path.basename(json_path)
     
     # Create an S3 client
     try:
@@ -34,8 +34,8 @@ def upload_to_s3(file_path, bucket_name, object_name=None):
         )
         s3_client = session.client('s3')
         
-        s3_client.upload_file(file_path, bucket_name, object_name)
-        log(f'Success: File {file_path} uploaded to {bucket_name} as {object_name}')
+        s3_client.upload_file(json_path, bucket_name, object_name)
+        log(f'Success: File {json_path} uploaded to {bucket_name} as {object_name}')
         return True
 
     except ClientError as e:

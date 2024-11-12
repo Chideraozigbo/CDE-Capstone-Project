@@ -1,914 +1,264 @@
-2024-11-10 22:10:01 - Log file cleared for new logs 
-2024-11-10 22:10:01 - Attempting to fetch data (attempt 1/3)
-2024-11-10 22:10:01 - Successfully retrieved data for 250 countries
-2024-11-10 22:10:01 - Processing country data...
-2024-11-10 22:10:01 - Data saved successfully:
-2024-11-10 22:10:01 - Parquet: /Users/user/Documents/CDE-Capstone-Project/data/countries_20241110_221021.parquet
-2024-11-10 22:10:01 - 
-Dataset dimensions: 250 rows x 900 columns
-2024-11-10 22:10:01 - 
-Columns in dataset:
-2024-11-10 22:10:01 - name_common
-2024-11-10 22:10:01 - name_official
-2024-11-10 22:10:01 - name_nativeName_eng_official
-2024-11-10 22:10:01 - name_nativeName_eng_common
-2024-11-10 22:10:01 - tld
-2024-11-10 22:10:01 - cca2
-2024-11-10 22:10:01 - ccn3
-2024-11-10 22:10:01 - cca3
-2024-11-10 22:10:01 - independent
-2024-11-10 22:10:01 - status
-2024-11-10 22:10:01 - unMember
-2024-11-10 22:10:01 - currencies_SHP_name
-2024-11-10 22:10:01 - currencies_SHP_symbol
-2024-11-10 22:10:01 - idd_root
-2024-11-10 22:10:01 - idd_suffixes
-2024-11-10 22:10:01 - capital
-2024-11-10 22:10:01 - altSpellings
-2024-11-10 22:10:01 - region
-2024-11-10 22:10:01 - languages_eng
-2024-11-10 22:10:01 - translations_ara_official
-2024-11-10 22:10:01 - translations_ara_common
-2024-11-10 22:10:01 - translations_bre_official
-2024-11-10 22:10:01 - translations_bre_common
-2024-11-10 22:10:01 - translations_ces_official
-2024-11-10 22:10:01 - translations_ces_common
-2024-11-10 22:10:01 - translations_cym_official
-2024-11-10 22:10:01 - translations_cym_common
-2024-11-10 22:10:01 - translations_deu_official
-2024-11-10 22:10:01 - translations_deu_common
-2024-11-10 22:10:01 - translations_est_official
-2024-11-10 22:10:01 - translations_est_common
-2024-11-10 22:10:01 - translations_fin_official
-2024-11-10 22:10:01 - translations_fin_common
-2024-11-10 22:10:01 - translations_fra_official
-2024-11-10 22:10:01 - translations_fra_common
-2024-11-10 22:10:01 - translations_hrv_official
-2024-11-10 22:10:01 - translations_hrv_common
-2024-11-10 22:10:01 - translations_hun_official
-2024-11-10 22:10:01 - translations_hun_common
-2024-11-10 22:10:01 - translations_ita_official
-2024-11-10 22:10:01 - translations_ita_common
-2024-11-10 22:10:01 - translations_jpn_official
-2024-11-10 22:10:01 - translations_jpn_common
-2024-11-10 22:10:01 - translations_kor_official
-2024-11-10 22:10:01 - translations_kor_common
-2024-11-10 22:10:01 - translations_nld_official
-2024-11-10 22:10:01 - translations_nld_common
-2024-11-10 22:10:01 - translations_per_official
-2024-11-10 22:10:01 - translations_per_common
-2024-11-10 22:10:01 - translations_pol_official
-2024-11-10 22:10:01 - translations_pol_common
-2024-11-10 22:10:01 - translations_por_official
-2024-11-10 22:10:01 - translations_por_common
-2024-11-10 22:10:01 - translations_rus_official
-2024-11-10 22:10:01 - translations_rus_common
-2024-11-10 22:10:01 - translations_slk_official
-2024-11-10 22:10:01 - translations_slk_common
-2024-11-10 22:10:01 - translations_spa_official
-2024-11-10 22:10:01 - translations_spa_common
-2024-11-10 22:10:01 - translations_srp_official
-2024-11-10 22:10:01 - translations_srp_common
-2024-11-10 22:10:01 - translations_swe_official
-2024-11-10 22:10:01 - translations_swe_common
-2024-11-10 22:10:01 - translations_tur_official
-2024-11-10 22:10:01 - translations_tur_common
-2024-11-10 22:10:01 - translations_urd_official
-2024-11-10 22:10:01 - translations_urd_common
-2024-11-10 22:10:01 - translations_zho_official
-2024-11-10 22:10:01 - translations_zho_common
-2024-11-10 22:10:01 - latlng
-2024-11-10 22:10:01 - landlocked
-2024-11-10 22:10:01 - area
-2024-11-10 22:10:01 - demonyms_eng_f
-2024-11-10 22:10:01 - demonyms_eng_m
-2024-11-10 22:10:01 - flag
-2024-11-10 22:10:01 - maps_googleMaps
-2024-11-10 22:10:01 - maps_openStreetMaps
-2024-11-10 22:10:01 - population
-2024-11-10 22:10:01 - car_signs
-2024-11-10 22:10:01 - car_side
-2024-11-10 22:10:01 - timezones
-2024-11-10 22:10:01 - continents
-2024-11-10 22:10:01 - flags_png
-2024-11-10 22:10:01 - flags_svg
-2024-11-10 22:10:01 - startOfWeek
-2024-11-10 22:10:01 - capitalInfo_latlng
-2024-11-10 22:10:01 - languages
-2024-11-10 22:10:01 - currency_code
-2024-11-10 22:10:01 - currency_name
-2024-11-10 22:10:01 - currency_symbol
-2024-11-10 22:10:01 - cioc
-2024-11-10 22:10:01 - currencies_XCD_name
-2024-11-10 22:10:01 - currencies_XCD_symbol
-2024-11-10 22:10:01 - subregion
-2024-11-10 22:10:01 - demonyms_fra_f
-2024-11-10 22:10:01 - demonyms_fra_m
-2024-11-10 22:10:01 - fifa
-2024-11-10 22:10:01 - flags_alt
-2024-11-10 22:10:01 - coatOfArms_png
-2024-11-10 22:10:01 - coatOfArms_svg
-2024-11-10 22:10:01 - name_nativeName_fra_official
-2024-11-10 22:10:01 - name_nativeName_fra_common
-2024-11-10 22:10:01 - name_nativeName_gsw_official
-2024-11-10 22:10:01 - name_nativeName_gsw_common
-2024-11-10 22:10:01 - name_nativeName_ita_official
-2024-11-10 22:10:01 - name_nativeName_ita_common
-2024-11-10 22:10:01 - name_nativeName_roh_official
-2024-11-10 22:10:01 - name_nativeName_roh_common
-2024-11-10 22:10:01 - currencies_CHF_name
-2024-11-10 22:10:01 - currencies_CHF_symbol
-2024-11-10 22:10:01 - languages_fra
-2024-11-10 22:10:01 - languages_gsw
-2024-11-10 22:10:01 - languages_ita
-2024-11-10 22:10:01 - languages_roh
-2024-11-10 22:10:01 - borders
-2024-11-10 22:10:01 - gini_2018
-2024-11-10 22:10:01 - postalCode_format
-2024-11-10 22:10:01 - postalCode_regex
-2024-11-10 22:10:01 - currencies_SLL_name
-2024-11-10 22:10:01 - currencies_SLL_symbol
-2024-11-10 22:10:01 - name_nativeName_hun_official
-2024-11-10 22:10:01 - name_nativeName_hun_common
-2024-11-10 22:10:01 - currencies_HUF_name
-2024-11-10 22:10:01 - currencies_HUF_symbol
-2024-11-10 22:10:01 - languages_hun
-2024-11-10 22:10:01 - name_nativeName_zho_official
-2024-11-10 22:10:01 - name_nativeName_zho_common
-2024-11-10 22:10:01 - currencies_TWD_name
-2024-11-10 22:10:01 - currencies_TWD_symbol
-2024-11-10 22:10:01 - languages_zho
-2024-11-10 22:10:01 - currencies_XPF_name
-2024-11-10 22:10:01 - currencies_XPF_symbol
-2024-11-10 22:10:01 - currencies_BBD_name
-2024-11-10 22:10:01 - currencies_BBD_symbol
-2024-11-10 22:10:01 - currencies_NZD_name
-2024-11-10 22:10:01 - currencies_NZD_symbol
-2024-11-10 22:10:01 - currencies_XOF_name
-2024-11-10 22:10:01 - currencies_XOF_symbol
-2024-11-10 22:10:01 - gini_2015
-2024-11-10 22:10:01 - name_nativeName_ara_official
-2024-11-10 22:10:01 - name_nativeName_ara_common
-2024-11-10 22:10:01 - currencies_TND_name
-2024-11-10 22:10:01 - currencies_TND_symbol
-2024-11-10 22:10:01 - languages_ara
-2024-11-10 22:10:01 - currencies_EUR_name
-2024-11-10 22:10:01 - currencies_EUR_symbol
-2024-11-10 22:10:01 - gini_2017
-2024-11-10 22:10:01 - name_nativeName_ind_official
-2024-11-10 22:10:01 - name_nativeName_ind_common
-2024-11-10 22:10:01 - currencies_IDR_name
-2024-11-10 22:10:01 - currencies_IDR_symbol
-2024-11-10 22:10:01 - languages_ind
-2024-11-10 22:10:01 - gini_2019
-2024-11-10 22:10:01 - name_nativeName_por_official
-2024-11-10 22:10:01 - name_nativeName_por_common
-2024-11-10 22:10:01 - currencies_CVE_name
-2024-11-10 22:10:01 - currencies_CVE_symbol
-2024-11-10 22:10:01 - languages_por
-2024-11-10 22:10:01 - name_nativeName_lao_official
-2024-11-10 22:10:01 - name_nativeName_lao_common
-2024-11-10 22:10:01 - currencies_LAK_name
-2024-11-10 22:10:01 - currencies_LAK_symbol
-2024-11-10 22:10:01 - languages_lao
-2024-11-10 22:10:01 - name_nativeName_nld_official
-2024-11-10 22:10:01 - name_nativeName_nld_common
-2024-11-10 22:10:01 - name_nativeName_pap_official
-2024-11-10 22:10:01 - name_nativeName_pap_common
-2024-11-10 22:10:01 - currencies_USD_name
-2024-11-10 22:10:01 - currencies_USD_symbol
-2024-11-10 22:10:01 - languages_nld
-2024-11-10 22:10:01 - languages_pap
-2024-11-10 22:10:01 - name_nativeName_swa_official
-2024-11-10 22:10:01 - name_nativeName_swa_common
-2024-11-10 22:10:01 - currencies_UGX_name
-2024-11-10 22:10:01 - currencies_UGX_symbol
-2024-11-10 22:10:01 - languages_swa
-2024-11-10 22:10:01 - gini_2016
-2024-11-10 22:10:01 - name_nativeName_cat_official
-2024-11-10 22:10:01 - name_nativeName_cat_common
-2024-11-10 22:10:01 - languages_cat
-2024-11-10 22:10:01 - name_nativeName_run_official
-2024-11-10 22:10:01 - name_nativeName_run_common
-2024-11-10 22:10:01 - currencies_BIF_name
-2024-11-10 22:10:01 - currencies_BIF_symbol
-2024-11-10 22:10:01 - languages_run
-2024-11-10 22:10:01 - gini_2013
-2024-11-10 22:10:01 - name_nativeName_afr_official
-2024-11-10 22:10:01 - name_nativeName_afr_common
-2024-11-10 22:10:01 - name_nativeName_nbl_official
-2024-11-10 22:10:01 - name_nativeName_nbl_common
-2024-11-10 22:10:01 - name_nativeName_nso_official
-2024-11-10 22:10:01 - name_nativeName_nso_common
-2024-11-10 22:10:01 - name_nativeName_sot_official
-2024-11-10 22:10:01 - name_nativeName_sot_common
-2024-11-10 22:10:01 - name_nativeName_ssw_official
-2024-11-10 22:10:01 - name_nativeName_ssw_common
-2024-11-10 22:10:01 - name_nativeName_tsn_official
-2024-11-10 22:10:01 - name_nativeName_tsn_common
-2024-11-10 22:10:01 - name_nativeName_tso_official
-2024-11-10 22:10:01 - name_nativeName_tso_common
-2024-11-10 22:10:01 - name_nativeName_ven_official
-2024-11-10 22:10:01 - name_nativeName_ven_common
-2024-11-10 22:10:01 - name_nativeName_xho_official
-2024-11-10 22:10:01 - name_nativeName_xho_common
-2024-11-10 22:10:01 - name_nativeName_zul_official
-2024-11-10 22:10:01 - name_nativeName_zul_common
-2024-11-10 22:10:01 - currencies_ZAR_name
-2024-11-10 22:10:01 - currencies_ZAR_symbol
-2024-11-10 22:10:01 - languages_afr
-2024-11-10 22:10:01 - languages_nbl
-2024-11-10 22:10:01 - languages_nso
-2024-11-10 22:10:01 - languages_sot
-2024-11-10 22:10:01 - languages_ssw
-2024-11-10 22:10:01 - languages_tsn
-2024-11-10 22:10:01 - languages_tso
-2024-11-10 22:10:01 - languages_ven
-2024-11-10 22:10:01 - languages_xho
-2024-11-10 22:10:01 - languages_zul
-2024-11-10 22:10:01 - gini_2014
-2024-11-10 22:10:01 - currencies_LYD_name
-2024-11-10 22:10:01 - currencies_LYD_symbol
-2024-11-10 22:10:01 - name_nativeName_spa_official
-2024-11-10 22:10:01 - name_nativeName_spa_common
-2024-11-10 22:10:01 - currencies_MXN_name
-2024-11-10 22:10:01 - currencies_MXN_symbol
-2024-11-10 22:10:01 - languages_spa
-2024-11-10 22:10:01 - currencies_XAF_name
-2024-11-10 22:10:01 - currencies_XAF_symbol
-2024-11-10 22:10:01 - name_nativeName_cal_official
-2024-11-10 22:10:01 - name_nativeName_cal_common
-2024-11-10 22:10:01 - name_nativeName_cha_official
-2024-11-10 22:10:01 - name_nativeName_cha_common
-2024-11-10 22:10:01 - languages_cal
-2024-11-10 22:10:01 - languages_cha
-2024-11-10 22:10:01 - name_nativeName_mkd_official
-2024-11-10 22:10:01 - name_nativeName_mkd_common
-2024-11-10 22:10:01 - currencies_MKD_name
-2024-11-10 22:10:01 - currencies_MKD_symbol
-2024-11-10 22:10:01 - languages_mkd
-2024-11-10 22:10:01 - currencies_CNY_name
-2024-11-10 22:10:01 - currencies_CNY_symbol
-2024-11-10 22:10:01 - currencies_YER_name
-2024-11-10 22:10:01 - currencies_YER_symbol
-2024-11-10 22:10:01 - name_nativeName_nfr_official
-2024-11-10 22:10:01 - name_nativeName_nfr_common
-2024-11-10 22:10:01 - currencies_GBP_name
-2024-11-10 22:10:01 - currencies_GBP_symbol
-2024-11-10 22:10:01 - currencies_GGP_name
-2024-11-10 22:10:01 - currencies_GGP_symbol
-2024-11-10 22:10:01 - languages_nfr
-2024-11-10 22:10:01 - currencies_SBD_name
-2024-11-10 22:10:01 - currencies_SBD_symbol
-2024-11-10 22:10:01 - gini_2012
-2024-11-10 22:10:01 - name_nativeName_nor_official
-2024-11-10 22:10:01 - name_nativeName_nor_common
-2024-11-10 22:10:01 - currencies_NOK_name
-2024-11-10 22:10:01 - currencies_NOK_symbol
-2024-11-10 22:10:01 - languages_nor
-2024-11-10 22:10:01 - name_nativeName_dan_official
-2024-11-10 22:10:01 - name_nativeName_dan_common
-2024-11-10 22:10:01 - name_nativeName_fao_official
-2024-11-10 22:10:01 - name_nativeName_fao_common
-2024-11-10 22:10:01 - currencies_DKK_name
-2024-11-10 22:10:01 - currencies_DKK_symbol
-2024-11-10 22:10:01 - currencies_FOK_name
-2024-11-10 22:10:01 - currencies_FOK_symbol
-2024-11-10 22:10:01 - languages_dan
-2024-11-10 22:10:01 - languages_fao
-2024-11-10 22:10:01 - name_nativeName_rus_official
-2024-11-10 22:10:01 - name_nativeName_rus_common
-2024-11-10 22:10:01 - name_nativeName_uzb_official
-2024-11-10 22:10:01 - name_nativeName_uzb_common
-2024-11-10 22:10:01 - currencies_UZS_name
-2024-11-10 22:10:01 - currencies_UZS_symbol
-2024-11-10 22:10:01 - languages_rus
-2024-11-10 22:10:01 - languages_uzb
-2024-11-10 22:10:01 - gini_2003
-2024-11-10 22:10:01 - currencies_EGP_name
-2024-11-10 22:10:01 - currencies_EGP_symbol
-2024-11-10 22:10:01 - gini_2011
-2024-11-10 22:10:01 - name_nativeName_sin_official
-2024-11-10 22:10:01 - name_nativeName_sin_common
-2024-11-10 22:10:01 - name_nativeName_tam_official
-2024-11-10 22:10:01 - name_nativeName_tam_common
-2024-11-10 22:10:01 - currencies_LKR_name
-2024-11-10 22:10:01 - currencies_LKR_symbol
-2024-11-10 22:10:01 - languages_sin
-2024-11-10 22:10:01 - languages_tam
-2024-11-10 22:10:01 - currencies_ILS_name
-2024-11-10 22:10:01 - currencies_ILS_symbol
-2024-11-10 22:10:01 - currencies_JOD_name
-2024-11-10 22:10:01 - currencies_JOD_symbol
-2024-11-10 22:10:01 - name_nativeName_ben_official
-2024-11-10 22:10:01 - name_nativeName_ben_common
-2024-11-10 22:10:01 - currencies_BDT_name
-2024-11-10 22:10:01 - currencies_BDT_symbol
-2024-11-10 22:10:01 - languages_ben
-2024-11-10 22:10:01 - name_nativeName_aym_official
-2024-11-10 22:10:01 - name_nativeName_aym_common
-2024-11-10 22:10:01 - name_nativeName_que_official
-2024-11-10 22:10:01 - name_nativeName_que_common
-2024-11-10 22:10:01 - currencies_PEN_name
-2024-11-10 22:10:01 - currencies_PEN_symbol
-2024-11-10 22:10:01 - languages_aym
-2024-11-10 22:10:01 - languages_que
-2024-11-10 22:10:01 - name_nativeName_msa_official
-2024-11-10 22:10:01 - name_nativeName_msa_common
-2024-11-10 22:10:01 - currencies_SGD_name
-2024-11-10 22:10:01 - currencies_SGD_symbol
-2024-11-10 22:10:01 - languages_msa
-2024-11-10 22:10:01 - name_nativeName_tur_official
-2024-11-10 22:10:01 - name_nativeName_tur_common
-2024-11-10 22:10:01 - currencies_TRY_name
-2024-11-10 22:10:01 - currencies_TRY_symbol
-2024-11-10 22:10:01 - languages_tur
-2024-11-10 22:10:01 - name_nativeName_prs_official
-2024-11-10 22:10:01 - name_nativeName_prs_common
-2024-11-10 22:10:01 - name_nativeName_pus_official
-2024-11-10 22:10:01 - name_nativeName_pus_common
-2024-11-10 22:10:01 - name_nativeName_tuk_official
-2024-11-10 22:10:01 - name_nativeName_tuk_common
-2024-11-10 22:10:01 - currencies_AFN_name
-2024-11-10 22:10:01 - currencies_AFN_symbol
-2024-11-10 22:10:01 - languages_prs
-2024-11-10 22:10:01 - languages_pus
-2024-11-10 22:10:01 - languages_tuk
-2024-11-10 22:10:01 - currencies_AWG_name
-2024-11-10 22:10:01 - currencies_AWG_symbol
-2024-11-10 22:10:01 - name_nativeName_rar_official
-2024-11-10 22:10:01 - name_nativeName_rar_common
-2024-11-10 22:10:01 - currencies_CKD_name
-2024-11-10 22:10:01 - currencies_CKD_symbol
-2024-11-10 22:10:01 - languages_rar
-2024-11-10 22:10:01 - currencies_ZMW_name
-2024-11-10 22:10:01 - currencies_ZMW_symbol
-2024-11-10 22:10:01 - name_nativeName_fin_official
-2024-11-10 22:10:01 - name_nativeName_fin_common
-2024-11-10 22:10:01 - name_nativeName_swe_official
-2024-11-10 22:10:01 - name_nativeName_swe_common
-2024-11-10 22:10:01 - languages_fin
-2024-11-10 22:10:01 - languages_swe
-2024-11-10 22:10:01 - currencies_AUD_name
-2024-11-10 22:10:01 - currencies_AUD_symbol
-2024-11-10 22:10:01 - name_nativeName_smo_official
-2024-11-10 22:10:01 - name_nativeName_smo_common
-2024-11-10 22:10:01 - name_nativeName_tkl_official
-2024-11-10 22:10:01 - name_nativeName_tkl_common
-2024-11-10 22:10:01 - languages_smo
-2024-11-10 22:10:01 - languages_tkl
-2024-11-10 22:10:01 - name_nativeName_pov_official
-2024-11-10 22:10:01 - name_nativeName_pov_common
-2024-11-10 22:10:01 - languages_pov
-2024-11-10 22:10:01 - gini_2010
-2024-11-10 22:10:01 - name_nativeName_aze_official
-2024-11-10 22:10:01 - name_nativeName_aze_common
-2024-11-10 22:10:01 - currencies_AZN_name
-2024-11-10 22:10:01 - currencies_AZN_symbol
-2024-11-10 22:10:01 - languages_aze
-2024-11-10 22:10:01 - gini_2005
-2024-11-10 22:10:01 - currencies_DJF_name
-2024-11-10 22:10:01 - currencies_DJF_symbol
-2024-11-10 22:10:01 - name_nativeName_kor_official
-2024-11-10 22:10:01 - name_nativeName_kor_common
-2024-11-10 22:10:01 - currencies_KPW_name
-2024-11-10 22:10:01 - currencies_KPW_symbol
-2024-11-10 22:10:01 - languages_kor
-2024-11-10 22:10:01 - name_nativeName_mfe_official
-2024-11-10 22:10:01 - name_nativeName_mfe_common
-2024-11-10 22:10:01 - currencies_MUR_name
-2024-11-10 22:10:01 - currencies_MUR_symbol
-2024-11-10 22:10:01 - languages_mfe
-2024-11-10 22:10:01 - currencies_COP_name
-2024-11-10 22:10:01 - currencies_COP_symbol
-2024-11-10 22:10:01 - name_nativeName_ell_official
-2024-11-10 22:10:01 - name_nativeName_ell_common
-2024-11-10 22:10:01 - languages_ell
-2024-11-10 22:10:01 - name_nativeName_hrv_official
-2024-11-10 22:10:01 - name_nativeName_hrv_common
-2024-11-10 22:10:01 - languages_hrv
-2024-11-10 22:10:01 - name_nativeName_ber_official
-2024-11-10 22:10:01 - name_nativeName_ber_common
-2024-11-10 22:10:01 - currencies_MAD_name
-2024-11-10 22:10:01 - currencies_MAD_symbol
-2024-11-10 22:10:01 - languages_ber
-2024-11-10 22:10:01 - currencies_DZD_name
-2024-11-10 22:10:01 - currencies_DZD_symbol
-2024-11-10 22:10:01 - currencies_SDG_name
-2024-11-10 22:10:01 - currencies_SDG_symbol
-2024-11-10 22:10:01 - name_nativeName_fij_official
-2024-11-10 22:10:01 - name_nativeName_fij_common
-2024-11-10 22:10:01 - name_nativeName_hif_official
-2024-11-10 22:10:01 - name_nativeName_hif_common
-2024-11-10 22:10:01 - currencies_FJD_name
-2024-11-10 22:10:01 - currencies_FJD_symbol
-2024-11-10 22:10:01 - languages_fij
-2024-11-10 22:10:01 - languages_hif
-2024-11-10 22:10:01 - name_nativeName_deu_official
-2024-11-10 22:10:01 - name_nativeName_deu_common
-2024-11-10 22:10:01 - languages_deu
-2024-11-10 22:10:01 - name_nativeName_nep_official
-2024-11-10 22:10:01 - name_nativeName_nep_common
-2024-11-10 22:10:01 - currencies_NPR_name
-2024-11-10 22:10:01 - currencies_NPR_symbol
-2024-11-10 22:10:01 - languages_nep
-2024-11-10 22:10:01 - name_nativeName_kat_official
-2024-11-10 22:10:01 - name_nativeName_kat_common
-2024-11-10 22:10:01 - currencies_GEL_name
-2024-11-10 22:10:01 - currencies_GEL_symbol
-2024-11-10 22:10:01 - languages_kat
-2024-11-10 22:10:01 - name_nativeName_urd_official
-2024-11-10 22:10:01 - name_nativeName_urd_common
-2024-11-10 22:10:01 - currencies_PKR_name
-2024-11-10 22:10:01 - currencies_PKR_symbol
-2024-11-10 22:10:01 - languages_urd
-2024-11-10 22:10:01 - currencies_BWP_name
-2024-11-10 22:10:01 - currencies_BWP_symbol
-2024-11-10 22:10:01 - currencies_LBP_name
-2024-11-10 22:10:01 - currencies_LBP_symbol
-2024-11-10 22:10:01 - name_nativeName_hmo_official
-2024-11-10 22:10:01 - name_nativeName_hmo_common
-2024-11-10 22:10:01 - name_nativeName_tpi_official
-2024-11-10 22:10:01 - name_nativeName_tpi_common
-2024-11-10 22:10:01 - currencies_PGK_name
-2024-11-10 22:10:01 - currencies_PGK_symbol
-2024-11-10 22:10:01 - languages_hmo
-2024-11-10 22:10:01 - languages_tpi
-2024-11-10 22:10:01 - gini_2009
-2024-11-10 22:10:01 - currencies_DOP_name
-2024-11-10 22:10:01 - currencies_DOP_symbol
-2024-11-10 22:10:01 - name_nativeName_pih_official
-2024-11-10 22:10:01 - name_nativeName_pih_common
-2024-11-10 22:10:01 - languages_pih
-2024-11-10 22:10:01 - currencies_QAR_name
-2024-11-10 22:10:01 - currencies_QAR_symbol
-2024-11-10 22:10:01 - name_nativeName_mlg_official
-2024-11-10 22:10:01 - name_nativeName_mlg_common
-2024-11-10 22:10:01 - currencies_MGA_name
-2024-11-10 22:10:01 - currencies_MGA_symbol
-2024-11-10 22:10:01 - languages_mlg
-2024-11-10 22:10:01 - name_nativeName_hin_official
-2024-11-10 22:10:01 - name_nativeName_hin_common
-2024-11-10 22:10:01 - currencies_INR_name
-2024-11-10 22:10:01 - currencies_INR_symbol
-2024-11-10 22:10:01 - languages_hin
-2024-11-10 22:10:01 - currencies_SYP_name
-2024-11-10 22:10:01 - currencies_SYP_symbol
-2024-11-10 22:10:01 - name_nativeName_cnr_official
-2024-11-10 22:10:01 - name_nativeName_cnr_common
-2024-11-10 22:10:01 - languages_cnr
-2024-11-10 22:10:01 - currencies_SZL_name
-2024-11-10 22:10:01 - currencies_SZL_symbol
-2024-11-10 22:10:01 - name_nativeName_grn_official
-2024-11-10 22:10:01 - name_nativeName_grn_common
-2024-11-10 22:10:01 - currencies_PYG_name
-2024-11-10 22:10:01 - currencies_PYG_symbol
-2024-11-10 22:10:01 - languages_grn
-2024-11-10 22:10:01 - name_nativeName_ukr_official
-2024-11-10 22:10:01 - name_nativeName_ukr_common
-2024-11-10 22:10:01 - currencies_UAH_name
-2024-11-10 22:10:01 - currencies_UAH_symbol
-2024-11-10 22:10:01 - languages_ukr
-2024-11-10 22:10:01 - name_nativeName_glv_official
-2024-11-10 22:10:01 - name_nativeName_glv_common
-2024-11-10 22:10:01 - currencies_IMP_name
-2024-11-10 22:10:01 - currencies_IMP_symbol
-2024-11-10 22:10:01 - languages_glv
-2024-11-10 22:10:01 - name_nativeName_her_official
-2024-11-10 22:10:01 - name_nativeName_her_common
-2024-11-10 22:10:01 - name_nativeName_hgm_official
-2024-11-10 22:10:01 - name_nativeName_hgm_common
-2024-11-10 22:10:01 - name_nativeName_kwn_official
-2024-11-10 22:10:01 - name_nativeName_kwn_common
-2024-11-10 22:10:01 - name_nativeName_loz_official
-2024-11-10 22:10:01 - name_nativeName_loz_common
-2024-11-10 22:10:01 - name_nativeName_ndo_official
-2024-11-10 22:10:01 - name_nativeName_ndo_common
-2024-11-10 22:10:01 - currencies_NAD_name
-2024-11-10 22:10:01 - currencies_NAD_symbol
-2024-11-10 22:10:01 - languages_her
-2024-11-10 22:10:01 - languages_hgm
-2024-11-10 22:10:01 - languages_kwn
-2024-11-10 22:10:01 - languages_loz
-2024-11-10 22:10:01 - languages_ndo
-2024-11-10 22:10:01 - currencies_AED_name
-2024-11-10 22:10:01 - currencies_AED_symbol
-2024-11-10 22:10:01 - name_nativeName_bul_official
-2024-11-10 22:10:01 - name_nativeName_bul_common
-2024-11-10 22:10:01 - currencies_BGN_name
-2024-11-10 22:10:01 - currencies_BGN_symbol
-2024-11-10 22:10:01 - languages_bul
-2024-11-10 22:10:01 - name_nativeName_kal_official
-2024-11-10 22:10:01 - name_nativeName_kal_common
-2024-11-10 22:10:01 - languages_kal
-2024-11-10 22:10:01 - name_nativeName_khm_official
-2024-11-10 22:10:01 - name_nativeName_khm_common
-2024-11-10 22:10:01 - currencies_KHR_name
-2024-11-10 22:10:01 - currencies_KHR_symbol
-2024-11-10 22:10:01 - languages_khm
-2024-11-10 22:10:01 - name_nativeName_arc_official
-2024-11-10 22:10:01 - name_nativeName_arc_common
-2024-11-10 22:10:01 - name_nativeName_ckb_official
-2024-11-10 22:10:01 - name_nativeName_ckb_common
-2024-11-10 22:10:01 - currencies_IQD_name
-2024-11-10 22:10:01 - currencies_IQD_symbol
-2024-11-10 22:10:01 - languages_arc
-2024-11-10 22:10:01 - languages_ckb
-2024-11-10 22:10:01 - currencies_SEK_name
-2024-11-10 22:10:01 - currencies_SEK_symbol
-2024-11-10 22:10:01 - currencies_CUC_name
-2024-11-10 22:10:01 - currencies_CUC_symbol
-2024-11-10 22:10:01 - currencies_CUP_name
-2024-11-10 22:10:01 - currencies_CUP_symbol
-2024-11-10 22:10:01 - name_nativeName_kir_official
-2024-11-10 22:10:01 - name_nativeName_kir_common
-2024-11-10 22:10:01 - currencies_KGS_name
-2024-11-10 22:10:01 - currencies_KGS_symbol
-2024-11-10 22:10:01 - languages_kir
-2024-11-10 22:10:01 - currencies_RUB_name
-2024-11-10 22:10:01 - currencies_RUB_symbol
-2024-11-10 22:10:01 - currencies_MYR_name
-2024-11-10 22:10:01 - currencies_MYR_symbol
-2024-11-10 22:10:01 - currencies_STN_name
-2024-11-10 22:10:01 - currencies_STN_symbol
-2024-11-10 22:10:01 - currencies_CAD_name
-2024-11-10 22:10:01 - currencies_CAD_symbol
-2024-11-10 22:10:01 - name_nativeName_nya_official
-2024-11-10 22:10:01 - name_nativeName_nya_common
-2024-11-10 22:10:01 - currencies_MWK_name
-2024-11-10 22:10:01 - currencies_MWK_symbol
-2024-11-10 22:10:01 - languages_nya
-2024-11-10 22:10:01 - currencies_SAR_name
-2024-11-10 22:10:01 - currencies_SAR_symbol
-2024-11-10 22:10:01 - name_nativeName_bos_official
-2024-11-10 22:10:01 - name_nativeName_bos_common
-2024-11-10 22:10:01 - name_nativeName_srp_official
-2024-11-10 22:10:01 - name_nativeName_srp_common
-2024-11-10 22:10:01 - currencies_BAM_name
-2024-11-10 22:10:01 - currencies_BAM_symbol
-2024-11-10 22:10:01 - languages_bos
-2024-11-10 22:10:01 - languages_srp
-2024-11-10 22:10:01 - name_nativeName_amh_official
-2024-11-10 22:10:01 - name_nativeName_amh_common
-2024-11-10 22:10:01 - currencies_ETB_name
-2024-11-10 22:10:01 - currencies_ETB_symbol
-2024-11-10 22:10:01 - languages_amh
-2024-11-10 22:10:01 - languages_eus
-2024-11-10 22:10:01 - languages_glc
-2024-11-10 22:10:01 - name_nativeName_slv_official
-2024-11-10 22:10:01 - name_nativeName_slv_common
-2024-11-10 22:10:01 - languages_slv
-2024-11-10 22:10:01 - currencies_OMR_name
-2024-11-10 22:10:01 - currencies_OMR_symbol
-2024-11-10 22:10:01 - currencies_MOP_name
-2024-11-10 22:10:01 - currencies_MOP_symbol
-2024-11-10 22:10:01 - currencies_LSL_name
-2024-11-10 22:10:01 - currencies_LSL_symbol
-2024-11-10 22:10:01 - name_nativeName_mah_official
-2024-11-10 22:10:01 - name_nativeName_mah_common
-2024-11-10 22:10:01 - languages_mah
-2024-11-10 22:10:01 - currencies_ANG_name
-2024-11-10 22:10:01 - currencies_ANG_symbol
-2024-11-10 22:10:01 - name_nativeName_isl_official
-2024-11-10 22:10:01 - name_nativeName_isl_common
-2024-11-10 22:10:01 - currencies_ISK_name
-2024-11-10 22:10:01 - currencies_ISK_symbol
-2024-11-10 22:10:01 - languages_isl
-2024-11-10 22:10:01 - name_nativeName_ltz_official
-2024-11-10 22:10:01 - name_nativeName_ltz_common
-2024-11-10 22:10:01 - languages_ltz
-2024-11-10 22:10:01 - currencies_ARS_name
-2024-11-10 22:10:01 - currencies_ARS_symbol
-2024-11-10 22:10:01 - name_nativeName_nau_official
-2024-11-10 22:10:01 - name_nativeName_nau_common
-2024-11-10 22:10:01 - languages_nau
-2024-11-10 22:10:01 - name_nativeName_mey_official
-2024-11-10 22:10:01 - name_nativeName_mey_common
-2024-11-10 22:10:01 - currencies_MRU_name
-2024-11-10 22:10:01 - currencies_MRU_symbol
-2024-11-10 22:10:01 - languages_mey
-2024-11-10 22:10:01 - currencies_CRC_name
-2024-11-10 22:10:01 - currencies_CRC_symbol
-2024-11-10 22:10:01 - name_nativeName_tha_official
-2024-11-10 22:10:01 - name_nativeName_tha_common
-2024-11-10 22:10:01 - currencies_THB_name
-2024-11-10 22:10:01 - currencies_THB_symbol
-2024-11-10 22:10:01 - languages_tha
-2024-11-10 22:10:01 - name_nativeName_hat_official
-2024-11-10 22:10:01 - name_nativeName_hat_common
-2024-11-10 22:10:01 - currencies_HTG_name
-2024-11-10 22:10:01 - currencies_HTG_symbol
-2024-11-10 22:10:01 - languages_hat
-2024-11-10 22:10:01 - name_nativeName_tvl_official
-2024-11-10 22:10:01 - name_nativeName_tvl_common
-2024-11-10 22:10:01 - currencies_TVD_name
-2024-11-10 22:10:01 - currencies_TVD_symbol
-2024-11-10 22:10:01 - languages_tvl
-2024-11-10 22:10:01 - currencies_HNL_name
-2024-11-10 22:10:01 - currencies_HNL_symbol
-2024-11-10 22:10:01 - name_nativeName_bel_official
-2024-11-10 22:10:01 - name_nativeName_bel_common
-2024-11-10 22:10:01 - currencies_BYN_name
-2024-11-10 22:10:01 - currencies_BYN_symbol
-2024-11-10 22:10:01 - languages_bel
-2024-11-10 22:10:01 - name_nativeName_lav_official
-2024-11-10 22:10:01 - name_nativeName_lav_common
-2024-11-10 22:10:01 - languages_lav
-2024-11-10 22:10:01 - name_nativeName_pau_official
-2024-11-10 22:10:01 - name_nativeName_pau_common
-2024-11-10 22:10:01 - languages_pau
-2024-11-10 22:10:01 - name_nativeName_fil_official
-2024-11-10 22:10:01 - name_nativeName_fil_common
-2024-11-10 22:10:01 - currencies_PHP_name
-2024-11-10 22:10:01 - currencies_PHP_symbol
-2024-11-10 22:10:01 - languages_fil
-2024-11-10 22:10:01 - currencies_GIP_name
-2024-11-10 22:10:01 - currencies_GIP_symbol
-2024-11-10 22:10:01 - currencies_GNF_name
-2024-11-10 22:10:01 - currencies_GNF_symbol
-2024-11-10 22:10:01 - currencies_BHD_name
-2024-11-10 22:10:01 - currencies_BHD_symbol
-2024-11-10 22:10:01 - currencies_SRD_name
-2024-11-10 22:10:01 - currencies_SRD_symbol
-2024-11-10 22:10:01 - gini_1999
-2024-11-10 22:10:01 - name_nativeName_kon_official
-2024-11-10 22:10:01 - name_nativeName_kon_common
-2024-11-10 22:10:01 - name_nativeName_lin_official
-2024-11-10 22:10:01 - name_nativeName_lin_common
-2024-11-10 22:10:01 - name_nativeName_lua_official
-2024-11-10 22:10:01 - name_nativeName_lua_common
-2024-11-10 22:10:01 - currencies_CDF_name
-2024-11-10 22:10:01 - currencies_CDF_symbol
-2024-11-10 22:10:01 - languages_kon
-2024-11-10 22:10:01 - languages_lin
-2024-11-10 22:10:01 - languages_lua
-2024-11-10 22:10:01 - name_nativeName_som_official
-2024-11-10 22:10:01 - name_nativeName_som_common
-2024-11-10 22:10:01 - currencies_SOS_name
-2024-11-10 22:10:01 - currencies_SOS_symbol
-2024-11-10 22:10:01 - languages_som
-2024-11-10 22:10:01 - name_nativeName_ces_official
-2024-11-10 22:10:01 - name_nativeName_ces_common
-2024-11-10 22:10:01 - name_nativeName_slk_official
-2024-11-10 22:10:01 - name_nativeName_slk_common
-2024-11-10 22:10:01 - currencies_CZK_name
-2024-11-10 22:10:01 - currencies_CZK_symbol
-2024-11-10 22:10:01 - languages_ces
-2024-11-10 22:10:01 - languages_slk
-2024-11-10 22:10:01 - name_nativeName_bis_official
-2024-11-10 22:10:01 - name_nativeName_bis_common
-2024-11-10 22:10:01 - currencies_VUV_name
-2024-11-10 22:10:01 - currencies_VUV_symbol
-2024-11-10 22:10:01 - languages_bis
-2024-11-10 22:10:01 - currencies_KES_name
-2024-11-10 22:10:01 - currencies_KES_symbol
-2024-11-10 22:10:01 - name_nativeName_niu_official
-2024-11-10 22:10:01 - name_nativeName_niu_common
-2024-11-10 22:10:01 - languages_niu
-2024-11-10 22:10:01 - name_nativeName_kin_official
-2024-11-10 22:10:01 - name_nativeName_kin_common
-2024-11-10 22:10:01 - currencies_RWF_name
-2024-11-10 22:10:01 - currencies_RWF_symbol
-2024-11-10 22:10:01 - languages_kin
-2024-11-10 22:10:01 - name_nativeName_est_official
-2024-11-10 22:10:01 - name_nativeName_est_common
-2024-11-10 22:10:01 - languages_est
-2024-11-10 22:10:01 - name_nativeName_ron_official
-2024-11-10 22:10:01 - name_nativeName_ron_common
-2024-11-10 22:10:01 - currencies_RON_name
-2024-11-10 22:10:01 - currencies_RON_symbol
-2024-11-10 22:10:01 - languages_ron
-2024-11-10 22:10:01 - currencies_TTD_name
-2024-11-10 22:10:01 - currencies_TTD_symbol
-2024-11-10 22:10:01 - gini_1992
-2024-11-10 22:10:01 - currencies_GYD_name
-2024-11-10 22:10:01 - currencies_GYD_symbol
-2024-11-10 22:10:01 - gini_1998
-2024-11-10 22:10:01 - name_nativeName_tet_official
-2024-11-10 22:10:01 - name_nativeName_tet_common
-2024-11-10 22:10:01 - languages_tet
-2024-11-10 22:10:01 - name_nativeName_vie_official
-2024-11-10 22:10:01 - name_nativeName_vie_common
-2024-11-10 22:10:01 - currencies_VND_name
-2024-11-10 22:10:01 - currencies_VND_symbol
-2024-11-10 22:10:01 - languages_vie
-2024-11-10 22:10:01 - currencies_UYU_name
-2024-11-10 22:10:01 - currencies_UYU_symbol
-2024-11-10 22:10:01 - name_nativeName_lat_official
-2024-11-10 22:10:01 - name_nativeName_lat_common
-2024-11-10 22:10:01 - languages_lat
-2024-11-10 22:10:01 - currencies_HKD_name
-2024-11-10 22:10:01 - currencies_HKD_symbol
-2024-11-10 22:10:01 - name_nativeName_bar_official
-2024-11-10 22:10:01 - name_nativeName_bar_common
-2024-11-10 22:10:01 - languages_de
-2024-11-10 22:10:01 - currencies_TMT_name
-2024-11-10 22:10:01 - currencies_TMT_symbol
-2024-11-10 22:10:01 - currencies_MZN_name
-2024-11-10 22:10:01 - currencies_MZN_symbol
-2024-11-10 22:10:01 - currencies_PAB_name
-2024-11-10 22:10:01 - currencies_PAB_symbol
-2024-11-10 22:10:01 - name_nativeName_gle_official
-2024-11-10 22:10:01 - name_nativeName_gle_common
-2024-11-10 22:10:01 - languages_gle
-2024-11-10 22:10:01 - name_nativeName_nno_official
-2024-11-10 22:10:01 - name_nativeName_nno_common
-2024-11-10 22:10:01 - name_nativeName_nob_official
-2024-11-10 22:10:01 - name_nativeName_nob_common
-2024-11-10 22:10:01 - name_nativeName_smi_official
-2024-11-10 22:10:01 - name_nativeName_smi_common
-2024-11-10 22:10:01 - languages_nno
-2024-11-10 22:10:01 - languages_nob
-2024-11-10 22:10:01 - languages_smi
-2024-11-10 22:10:01 - name_nativeName_sag_official
-2024-11-10 22:10:01 - name_nativeName_sag_common
-2024-11-10 22:10:01 - languages_sag
-2024-11-10 22:10:01 - gini_2008
-2024-11-10 22:10:01 - name_nativeName_tir_official
-2024-11-10 22:10:01 - name_nativeName_tir_common
-2024-11-10 22:10:01 - currencies_ERN_name
-2024-11-10 22:10:01 - currencies_ERN_symbol
-2024-11-10 22:10:01 - languages_tir
-2024-11-10 22:10:01 - currencies_TZS_name
-2024-11-10 22:10:01 - currencies_TZS_symbol
-2024-11-10 22:10:01 - currencies_KRW_name
-2024-11-10 22:10:01 - currencies_KRW_symbol
-2024-11-10 22:10:01 - name_nativeName_lit_official
-2024-11-10 22:10:01 - name_nativeName_lit_common
-2024-11-10 22:10:01 - languages_lit
-2024-11-10 22:10:01 - currencies_AOA_name
-2024-11-10 22:10:01 - currencies_AOA_symbol
-2024-11-10 22:10:01 - name_nativeName_kaz_official
-2024-11-10 22:10:01 - name_nativeName_kaz_common
-2024-11-10 22:10:01 - currencies_KZT_name
-2024-11-10 22:10:01 - currencies_KZT_symbol
-2024-11-10 22:10:01 - languages_kaz
-2024-11-10 22:10:01 - currencies_MDL_name
-2024-11-10 22:10:01 - currencies_MDL_symbol
-2024-11-10 22:10:01 - currencies_FKP_name
-2024-11-10 22:10:01 - currencies_FKP_symbol
-2024-11-10 22:10:01 - name_nativeName_hye_official
-2024-11-10 22:10:01 - name_nativeName_hye_common
-2024-11-10 22:10:01 - currencies_AMD_name
-2024-11-10 22:10:01 - currencies_AMD_symbol
-2024-11-10 22:10:01 - languages_hye
-2024-11-10 22:10:01 - currencies_WST_name
-2024-11-10 22:10:01 - currencies_WST_symbol
-2024-11-10 22:10:01 - name_nativeName_nrf_official
-2024-11-10 22:10:01 - name_nativeName_nrf_common
-2024-11-10 22:10:01 - currencies_JEP_name
-2024-11-10 22:10:01 - currencies_JEP_symbol
-2024-11-10 22:10:01 - languages_nrf
-2024-11-10 22:10:01 - name_nativeName_jpn_official
-2024-11-10 22:10:01 - name_nativeName_jpn_common
-2024-11-10 22:10:01 - currencies_JPY_name
-2024-11-10 22:10:01 - currencies_JPY_symbol
-2024-11-10 22:10:01 - languages_jpn
-2024-11-10 22:10:01 - currencies_BOB_name
-2024-11-10 22:10:01 - currencies_BOB_symbol
-2024-11-10 22:10:01 - currencies_CLP_name
-2024-11-10 22:10:01 - currencies_CLP_symbol
-2024-11-10 22:10:01 - currencies_BMD_name
-2024-11-10 22:10:01 - currencies_BMD_symbol
-2024-11-10 22:10:01 - name_nativeName_crs_official
-2024-11-10 22:10:01 - name_nativeName_crs_common
-2024-11-10 22:10:01 - currencies_SCR_name
-2024-11-10 22:10:01 - currencies_SCR_symbol
-2024-11-10 22:10:01 - languages_crs
-2024-11-10 22:10:01 - currencies_GTQ_name
-2024-11-10 22:10:01 - currencies_GTQ_symbol
-2024-11-10 22:10:01 - name_nativeName_tgk_official
-2024-11-10 22:10:01 - name_nativeName_tgk_common
-2024-11-10 22:10:01 - currencies_TJS_name
-2024-11-10 22:10:01 - currencies_TJS_symbol
-2024-11-10 22:10:01 - languages_tgk
-2024-11-10 22:10:01 - name_nativeName_mlt_official
-2024-11-10 22:10:01 - name_nativeName_mlt_common
-2024-11-10 22:10:01 - languages_mlt
-2024-11-10 22:10:01 - currencies_GMD_name
-2024-11-10 22:10:01 - currencies_GMD_symbol
-2024-11-10 22:10:01 - currencies_NGN_name
-2024-11-10 22:10:01 - currencies_NGN_symbol
-2024-11-10 22:10:01 - currencies_BSD_name
-2024-11-10 22:10:01 - currencies_BSD_symbol
-2024-11-10 22:10:01 - name_nativeName_sqi_official
-2024-11-10 22:10:01 - name_nativeName_sqi_common
-2024-11-10 22:10:01 - languages_sqi
-2024-11-10 22:10:01 - currencies_KWD_name
-2024-11-10 22:10:01 - currencies_KWD_symbol
-2024-11-10 22:10:01 - name_nativeName_div_official
-2024-11-10 22:10:01 - name_nativeName_div_common
-2024-11-10 22:10:01 - currencies_MVR_name
-2024-11-10 22:10:01 - currencies_MVR_symbol
-2024-11-10 22:10:01 - languages_div
-2024-11-10 22:10:01 - currencies_SSP_name
-2024-11-10 22:10:01 - currencies_SSP_symbol
-2024-11-10 22:10:01 - name_nativeName_fas_official
-2024-11-10 22:10:01 - name_nativeName_fas_common
-2024-11-10 22:10:01 - currencies_IRR_name
-2024-11-10 22:10:01 - currencies_IRR_symbol
-2024-11-10 22:10:01 - languages_fas
-2024-11-10 22:10:01 - currencies_ALL_name
-2024-11-10 22:10:01 - currencies_ALL_symbol
-2024-11-10 22:10:01 - currencies_BRL_name
-2024-11-10 22:10:01 - currencies_BRL_symbol
-2024-11-10 22:10:01 - currencies_RSD_name
-2024-11-10 22:10:01 - currencies_RSD_symbol
-2024-11-10 22:10:01 - name_nativeName_bjz_official
-2024-11-10 22:10:01 - name_nativeName_bjz_common
-2024-11-10 22:10:01 - currencies_BZD_name
-2024-11-10 22:10:01 - currencies_BZD_symbol
-2024-11-10 22:10:01 - languages_bjz
-2024-11-10 22:10:01 - name_nativeName_mya_official
-2024-11-10 22:10:01 - name_nativeName_mya_common
-2024-11-10 22:10:01 - currencies_MMK_name
-2024-11-10 22:10:01 - currencies_MMK_symbol
-2024-11-10 22:10:01 - languages_mya
-2024-11-10 22:10:01 - name_nativeName_dzo_official
-2024-11-10 22:10:01 - name_nativeName_dzo_common
-2024-11-10 22:10:01 - currencies_BTN_name
-2024-11-10 22:10:01 - currencies_BTN_symbol
-2024-11-10 22:10:01 - languages_dzo
-2024-11-10 22:10:01 - currencies_VES_name
-2024-11-10 22:10:01 - currencies_VES_symbol
-2024-11-10 22:10:01 - gini_2006
-2024-11-10 22:10:01 - currencies_LRD_name
-2024-11-10 22:10:01 - currencies_LRD_symbol
-2024-11-10 22:10:01 - name_nativeName_jam_official
-2024-11-10 22:10:01 - name_nativeName_jam_common
-2024-11-10 22:10:01 - currencies_JMD_name
-2024-11-10 22:10:01 - currencies_JMD_symbol
-2024-11-10 22:10:01 - languages_jam
-2024-11-10 22:10:01 - gini_2004
-2024-11-10 22:10:01 - name_nativeName_pol_official
-2024-11-10 22:10:01 - name_nativeName_pol_common
-2024-11-10 22:10:01 - currencies_PLN_name
-2024-11-10 22:10:01 - currencies_PLN_symbol
-2024-11-10 22:10:01 - languages_pol
-2024-11-10 22:10:01 - currencies_KYD_name
-2024-11-10 22:10:01 - currencies_KYD_symbol
-2024-11-10 22:10:01 - currencies_BND_name
-2024-11-10 22:10:01 - currencies_BND_symbol
-2024-11-10 22:10:01 - name_nativeName_zdj_official
-2024-11-10 22:10:01 - name_nativeName_zdj_common
-2024-11-10 22:10:01 - currencies_KMF_name
-2024-11-10 22:10:01 - currencies_KMF_symbol
-2024-11-10 22:10:01 - languages_zdj
-2024-11-10 22:10:01 - name_nativeName_ton_official
-2024-11-10 22:10:01 - name_nativeName_ton_common
-2024-11-10 22:10:01 - currencies_TOP_name
-2024-11-10 22:10:01 - currencies_TOP_symbol
-2024-11-10 22:10:01 - languages_ton
-2024-11-10 22:10:01 - name_nativeName_gil_official
-2024-11-10 22:10:01 - name_nativeName_gil_common
-2024-11-10 22:10:01 - currencies_KID_name
-2024-11-10 22:10:01 - currencies_KID_symbol
-2024-11-10 22:10:01 - languages_gil
-2024-11-10 22:10:01 - currencies_GHS_name
-2024-11-10 22:10:01 - currencies_GHS_symbol
-2024-11-10 22:10:01 - name_nativeName_bwg_official
-2024-11-10 22:10:01 - name_nativeName_bwg_common
-2024-11-10 22:10:01 - name_nativeName_kck_official
-2024-11-10 22:10:01 - name_nativeName_kck_common
-2024-11-10 22:10:01 - name_nativeName_khi_official
-2024-11-10 22:10:01 - name_nativeName_khi_common
-2024-11-10 22:10:01 - name_nativeName_ndc_official
-2024-11-10 22:10:01 - name_nativeName_ndc_common
-2024-11-10 22:10:01 - name_nativeName_nde_official
-2024-11-10 22:10:01 - name_nativeName_nde_common
-2024-11-10 22:10:01 - name_nativeName_sna_official
-2024-11-10 22:10:01 - name_nativeName_sna_common
-2024-11-10 22:10:01 - name_nativeName_toi_official
-2024-11-10 22:10:01 - name_nativeName_toi_common
-2024-11-10 22:10:01 - name_nativeName_zib_official
-2024-11-10 22:10:01 - name_nativeName_zib_common
-2024-11-10 22:10:01 - currencies_ZWL_name
-2024-11-10 22:10:01 - currencies_ZWL_symbol
-2024-11-10 22:10:01 - languages_bwg
-2024-11-10 22:10:01 - languages_kck
-2024-11-10 22:10:01 - languages_khi
-2024-11-10 22:10:01 - languages_ndc
-2024-11-10 22:10:01 - languages_nde
-2024-11-10 22:10:01 - languages_sna
-2024-11-10 22:10:01 - languages_toi
-2024-11-10 22:10:01 - languages_zib
-2024-11-10 22:10:01 - name_nativeName_mon_official
-2024-11-10 22:10:01 - name_nativeName_mon_common
-2024-11-10 22:10:01 - currencies_MNT_name
-2024-11-10 22:10:01 - currencies_MNT_symbol
-2024-11-10 22:10:01 - languages_mon
-2024-11-10 22:10:01 - name_nativeName_heb_official
-2024-11-10 22:10:01 - name_nativeName_heb_common
-2024-11-10 22:10:01 - languages_heb
-2024-11-10 22:10:01 - name_nativeName_mri_official
-2024-11-10 22:10:01 - name_nativeName_mri_common
-2024-11-10 22:10:01 - name_nativeName_nzs_official
-2024-11-10 22:10:01 - name_nativeName_nzs_common
-2024-11-10 22:10:01 - languages_mri
-2024-11-10 22:10:01 - languages_nzs
-2024-11-10 22:10:01 - currencies_NIO_name
-2024-11-10 22:10:01 - currencies_NIO_symbol
-2024-11-10 22:10:01 - Starting the Load Phase for /Users/user/Documents/CDE-Capstone-Project/data/countries_20241110_221021.parquet
-2024-11-10 22:10:01 - Success: File /Users/user/Documents/CDE-Capstone-Project/data/countries_20241110_221021.parquet uploaded to cde-countries as raw/countries_20241110_221021.parquet
-2024-11-10 22:10:01 - File /Users/user/Documents/CDE-Capstone-Project/data/countries_20241110_221021.parquet successfully uploaded to S3.
-2024-11-10 22:10:01 - Process completed successfully
+2024-11-12 18:06:06 - Log file cleared for new logs 
+2024-11-12 18:06:06 - Starting the ETL process
+2024-11-12 18:06:06 - Starting the Extraction Phase
+2024-11-12 18:06:06 - Attempting to fetch data (attempt 1/3)
+2024-11-12 18:06:06 - Successfully retrieved data for 250 countries
+2024-11-12 18:06:06 - Data saved as: countries_20241112_180613.json
+2024-11-12 18:06:06 - File path: /Users/user/Documents/CDE-Capstone-Project/data/raw/countries_20241112_180613.json
+2024-11-12 18:06:06 - Extraction completed successfully: countries_20241112_180613.json
+2024-11-12 18:06:06 - Starting the Loading Phase for Raw Data
+2024-11-12 18:06:06 - Starting the Load Phase for /Users/user/Documents/CDE-Capstone-Project/data/raw/countries_20241112_180613.json
+2024-11-12 18:06:06 - Success: File /Users/user/Documents/CDE-Capstone-Project/data/raw/countries_20241112_180613.json uploaded to cde-countries as raw/countries_20241112_180613.json
+2024-11-12 18:06:06 - Raw data file uploaded successfully
+2024-11-12 18:06:06 - Retrieving JSON data raw/countries_20241112_180613.json from S3 and loading into DataFrame
+2024-11-12 18:06:06 - Data loaded into DataFrame successfully
+2024-11-12 18:06:06 - Extracting and saving country data
+2024-11-12 18:06:06 - Starting data extraction for countries
+2024-11-12 18:06:06 - Data extracted for Grenada
+2024-11-12 18:06:06 - Data extracted for Switzerland
+2024-11-12 18:06:06 - Data extracted for Sierra Leone
+2024-11-12 18:06:06 - Data extracted for Hungary
+2024-11-12 18:06:06 - Data extracted for Taiwan
+2024-11-12 18:06:06 - Data extracted for Wallis and Futuna
+2024-11-12 18:06:06 - Data extracted for Barbados
+2024-11-12 18:06:06 - Data extracted for Pitcairn Islands
+2024-11-12 18:06:06 - Data extracted for Ivory Coast
+2024-11-12 18:06:06 - Data extracted for Tunisia
+2024-11-12 18:06:06 - Data extracted for Italy
+2024-11-12 18:06:06 - Data extracted for Benin
+2024-11-12 18:06:06 - Data extracted for Indonesia
+2024-11-12 18:06:06 - Data extracted for Cape Verde
+2024-11-12 18:06:06 - Data extracted for Saint Kitts and Nevis
+2024-11-12 18:06:06 - Data extracted for Laos
+2024-11-12 18:06:06 - Data extracted for Caribbean Netherlands
+2024-11-12 18:06:06 - Data extracted for Uganda
+2024-11-12 18:06:06 - Data extracted for Andorra
+2024-11-12 18:06:06 - Data extracted for Burundi
+2024-11-12 18:06:06 - Data extracted for South Africa
+2024-11-12 18:06:06 - Data extracted for France
+2024-11-12 18:06:06 - Data extracted for Libya
+2024-11-12 18:06:06 - Data extracted for Mexico
+2024-11-12 18:06:06 - Data extracted for Gabon
+2024-11-12 18:06:06 - Data extracted for Northern Mariana Islands
+2024-11-12 18:06:06 - Data extracted for North Macedonia
+2024-11-12 18:06:06 - Data extracted for China
+2024-11-12 18:06:06 - Data extracted for Yemen
+2024-11-12 18:06:06 - Data extracted for Saint Barthélemy
+2024-11-12 18:06:06 - Data extracted for Guernsey
+2024-11-12 18:06:06 - Data extracted for Solomon Islands
+2024-11-12 18:06:06 - Data extracted for Svalbard and Jan Mayen
+2024-11-12 18:06:06 - Data extracted for Faroe Islands
+2024-11-12 18:06:06 - Data extracted for Uzbekistan
+2024-11-12 18:06:06 - Data extracted for Egypt
+2024-11-12 18:06:06 - Data extracted for Senegal
+2024-11-12 18:06:06 - Data extracted for Sri Lanka
+2024-11-12 18:06:06 - Data extracted for Palestine
+2024-11-12 18:06:06 - Data extracted for Bangladesh
+2024-11-12 18:06:06 - Data extracted for Peru
+2024-11-12 18:06:06 - Data extracted for Singapore
+2024-11-12 18:06:06 - Data extracted for Turkey
+2024-11-12 18:06:06 - Data extracted for Afghanistan
+2024-11-12 18:06:06 - Data extracted for Aruba
+2024-11-12 18:06:06 - Data extracted for Cook Islands
+2024-11-12 18:06:06 - Data extracted for United Kingdom
+2024-11-12 18:06:06 - Data extracted for Zambia
+2024-11-12 18:06:06 - Data extracted for Finland
+2024-11-12 18:06:06 - Data extracted for Niger
+2024-11-12 18:06:06 - Data extracted for Christmas Island
+2024-11-12 18:06:06 - Data extracted for Tokelau
+2024-11-12 18:06:06 - Data extracted for Guinea-Bissau
+2024-11-12 18:06:06 - Data extracted for Azerbaijan
+2024-11-12 18:06:06 - Data extracted for Réunion
+2024-11-12 18:06:06 - Data extracted for Djibouti
+2024-11-12 18:06:06 - Data extracted for North Korea
+2024-11-12 18:06:06 - Data extracted for Mauritius
+2024-11-12 18:06:06 - Data extracted for Montserrat
+2024-11-12 18:06:06 - Data extracted for United States Virgin Islands
+2024-11-12 18:06:06 - Data extracted for Colombia
+2024-11-12 18:06:06 - Data extracted for Greece
+2024-11-12 18:06:06 - Data extracted for Croatia
+2024-11-12 18:06:06 - Data extracted for Morocco
+2024-11-12 18:06:06 - Data extracted for Algeria
+2024-11-12 18:06:06 - Data extracted for Netherlands
+2024-11-12 18:06:06 - Data extracted for Sudan
+2024-11-12 18:06:06 - Data extracted for Fiji
+2024-11-12 18:06:06 - Data extracted for Liechtenstein
+2024-11-12 18:06:06 - Data extracted for Nepal
+2024-11-12 18:06:06 - Data extracted for Puerto Rico
+2024-11-12 18:06:06 - Data extracted for Georgia
+2024-11-12 18:06:06 - Data extracted for Pakistan
+2024-11-12 18:06:06 - Data extracted for Monaco
+2024-11-12 18:06:06 - Data extracted for Botswana
+2024-11-12 18:06:06 - Data extracted for Lebanon
+2024-11-12 18:06:06 - Data extracted for Papua New Guinea
+2024-11-12 18:06:06 - Data extracted for Mayotte
+2024-11-12 18:06:06 - Data extracted for Dominican Republic
+2024-11-12 18:06:06 - Data extracted for Norfolk Island
+2024-11-12 18:06:06 - Data extracted for Qatar
+2024-11-12 18:06:06 - Data extracted for Madagascar
+2024-11-12 18:06:06 - Data extracted for India
+2024-11-12 18:06:06 - Data extracted for Syria
+2024-11-12 18:06:06 - Data extracted for Montenegro
+2024-11-12 18:06:06 - Data extracted for Eswatini
+2024-11-12 18:06:06 - Data extracted for Paraguay
+2024-11-12 18:06:06 - Data extracted for El Salvador
+2024-11-12 18:06:06 - Data extracted for Ukraine
+2024-11-12 18:06:06 - Data extracted for Isle of Man
+2024-11-12 18:06:06 - Data extracted for Namibia
+2024-11-12 18:06:06 - Data extracted for United Arab Emirates
+2024-11-12 18:06:06 - Data extracted for Bulgaria
+2024-11-12 18:06:06 - Data extracted for Greenland
+2024-11-12 18:06:06 - Data extracted for Germany
+2024-11-12 18:06:06 - Data extracted for Cambodia
+2024-11-12 18:06:06 - Data extracted for Iraq
+2024-11-12 18:06:06 - Data extracted for Sweden
+2024-11-12 18:06:06 - Data extracted for Cuba
+2024-11-12 18:06:06 - Data extracted for Kyrgyzstan
+2024-11-12 18:06:06 - Data extracted for Russia
+2024-11-12 18:06:06 - Data extracted for Malaysia
+2024-11-12 18:06:06 - Data extracted for São Tomé and Príncipe
+2024-11-12 18:06:06 - Data extracted for Cyprus
+2024-11-12 18:06:06 - Data extracted for Canada
+2024-11-12 18:06:06 - Data extracted for Malawi
+2024-11-12 18:06:06 - Data extracted for Saudi Arabia
+2024-11-12 18:06:06 - Data extracted for Bosnia and Herzegovina
+2024-11-12 18:06:06 - Data extracted for Ethiopia
+2024-11-12 18:06:06 - Data extracted for Spain
+2024-11-12 18:06:06 - Data extracted for Slovenia
+2024-11-12 18:06:06 - Data extracted for Oman
+2024-11-12 18:06:06 - Data extracted for Saint Pierre and Miquelon
+2024-11-12 18:06:06 - Data extracted for San Marino
+2024-11-12 18:06:06 - Data extracted for Lesotho
+2024-11-12 18:06:06 - Data extracted for Marshall Islands
+2024-11-12 18:06:06 - Data extracted for Sint Maarten
+2024-11-12 18:06:06 - Data extracted for Iceland
+2024-11-12 18:06:06 - Data extracted for Luxembourg
+2024-11-12 18:06:06 - Data extracted for Argentina
+2024-11-12 18:06:06 - Data extracted for Turks and Caicos Islands
+2024-11-12 18:06:06 - Data extracted for Nauru
+2024-11-12 18:06:06 - Data extracted for Cocos (Keeling) Islands
+2024-11-12 18:06:06 - Data extracted for Western Sahara
+2024-11-12 18:06:06 - Data extracted for Dominica
+2024-11-12 18:06:06 - Data extracted for Costa Rica
+2024-11-12 18:06:06 - Data extracted for Australia
+2024-11-12 18:06:06 - Data extracted for Thailand
+2024-11-12 18:06:06 - Data extracted for Haiti
+2024-11-12 18:06:06 - Data extracted for Tuvalu
+2024-11-12 18:06:06 - Data extracted for Honduras
+2024-11-12 18:06:06 - Data extracted for Equatorial Guinea
+2024-11-12 18:06:06 - Data extracted for Saint Lucia
+2024-11-12 18:06:06 - Data extracted for French Polynesia
+2024-11-12 18:06:06 - Data extracted for Belarus
+2024-11-12 18:06:06 - Data extracted for Latvia
+2024-11-12 18:06:06 - Data extracted for Palau
+2024-11-12 18:06:06 - Data extracted for Guadeloupe
+2024-11-12 18:06:06 - Data extracted for Philippines
+2024-11-12 18:06:06 - Data extracted for Gibraltar
+2024-11-12 18:06:06 - Data extracted for Denmark
+2024-11-12 18:06:06 - Data extracted for Cameroon
+2024-11-12 18:06:06 - Data extracted for Guinea
+2024-11-12 18:06:06 - Data extracted for Bahrain
+2024-11-12 18:06:06 - Data extracted for Suriname
+2024-11-12 18:06:06 - Data extracted for DR Congo
+2024-11-12 18:06:06 - Data extracted for Somalia
+2024-11-12 18:06:06 - Data extracted for Czechia
+2024-11-12 18:06:06 - Data extracted for New Caledonia
+2024-11-12 18:06:06 - Data extracted for Vanuatu
+2024-11-12 18:06:06 - Data extracted for Saint Helena, Ascension and Tristan da Cunha
+2024-11-12 18:06:06 - Data extracted for Togo
+2024-11-12 18:06:06 - Data extracted for British Virgin Islands
+2024-11-12 18:06:06 - Data extracted for Kenya
+2024-11-12 18:06:06 - Data extracted for Niue
+2024-11-12 18:06:06 - Data extracted for Rwanda
+2024-11-12 18:06:06 - Data extracted for Estonia
+2024-11-12 18:06:06 - Data extracted for Romania
+2024-11-12 18:06:06 - Data extracted for Trinidad and Tobago
+2024-11-12 18:06:06 - Data extracted for Guyana
+2024-11-12 18:06:06 - Data extracted for Timor-Leste
+2024-11-12 18:06:06 - Data extracted for Vietnam
+2024-11-12 18:06:06 - Data extracted for Uruguay
+2024-11-12 18:06:06 - Data extracted for Vatican City
+2024-11-12 18:06:06 - Data extracted for Hong Kong
+2024-11-12 18:06:06 - Data extracted for Austria
+2024-11-12 18:06:06 - Data extracted for Antigua and Barbuda
+2024-11-12 18:06:06 - Data extracted for Turkmenistan
+2024-11-12 18:06:06 - Data extracted for Mozambique
+2024-11-12 18:06:06 - Data extracted for Panama
+2024-11-12 18:06:06 - Data extracted for Micronesia
+2024-11-12 18:06:06 - Data extracted for Ireland
+2024-11-12 18:06:06 - Data extracted for Curaçao
+2024-11-12 18:06:06 - Data extracted for French Guiana
+2024-11-12 18:06:06 - Data extracted for Norway
+2024-11-12 18:06:06 - Data extracted for Åland Islands
+2024-11-12 18:06:06 - Data extracted for Central African Republic
+2024-11-12 18:06:06 - Data extracted for Burkina Faso
+2024-11-12 18:06:06 - Data extracted for Eritrea
+2024-11-12 18:06:06 - Data extracted for Tanzania
+2024-11-12 18:06:06 - Data extracted for South Korea
+2024-11-12 18:06:06 - Data extracted for Jordan
+2024-11-12 18:06:06 - Data extracted for Mauritania
+2024-11-12 18:06:06 - Data extracted for Lithuania
+2024-11-12 18:06:06 - Data extracted for United States Minor Outlying Islands
+2024-11-12 18:06:06 - Data extracted for Slovakia
+2024-11-12 18:06:06 - Data extracted for Angola
+2024-11-12 18:06:06 - Data extracted for Kazakhstan
+2024-11-12 18:06:06 - Data extracted for Moldova
+2024-11-12 18:06:06 - Data extracted for Mali
+2024-11-12 18:06:06 - Data extracted for Falkland Islands
+2024-11-12 18:06:06 - Data extracted for Armenia
+2024-11-12 18:06:06 - Data extracted for Samoa
+2024-11-12 18:06:06 - Data extracted for Jersey
+2024-11-12 18:06:06 - Data extracted for Japan
+2024-11-12 18:06:06 - Data extracted for Bolivia
+2024-11-12 18:06:06 - Data extracted for Chile
+2024-11-12 18:06:06 - Data extracted for United States
+2024-11-12 18:06:06 - Data extracted for Saint Vincent and the Grenadines
+2024-11-12 18:06:06 - Data extracted for Bermuda
+2024-11-12 18:06:06 - Data extracted for Seychelles
+2024-11-12 18:06:06 - Data extracted for British Indian Ocean Territory
+2024-11-12 18:06:06 - Data extracted for Guatemala
+2024-11-12 18:06:06 - Data extracted for Ecuador
+2024-11-12 18:06:06 - Data extracted for Martinique
+2024-11-12 18:06:06 - Data extracted for Tajikistan
+2024-11-12 18:06:06 - Data extracted for Malta
+2024-11-12 18:06:06 - Data extracted for Gambia
+2024-11-12 18:06:06 - Data extracted for Nigeria
+2024-11-12 18:06:06 - Data extracted for Bahamas
+2024-11-12 18:06:06 - Data extracted for Kuwait
+2024-11-12 18:06:06 - Data extracted for Maldives
+2024-11-12 18:06:06 - Data extracted for South Sudan
+2024-11-12 18:06:06 - Data extracted for Iran
+2024-11-12 18:06:06 - Data extracted for Albania
+2024-11-12 18:06:06 - Data extracted for Brazil
+2024-11-12 18:06:06 - Data extracted for Serbia
+2024-11-12 18:06:06 - Data extracted for Belize
+2024-11-12 18:06:06 - Data extracted for Myanmar
+2024-11-12 18:06:06 - Data extracted for Bhutan
+2024-11-12 18:06:06 - Data extracted for Venezuela
+2024-11-12 18:06:06 - Data extracted for Liberia
+2024-11-12 18:06:06 - Data extracted for Jamaica
+2024-11-12 18:06:06 - Data extracted for Poland
+2024-11-12 18:06:06 - Data extracted for Cayman Islands
+2024-11-12 18:06:06 - Data extracted for Brunei
+2024-11-12 18:06:06 - Data extracted for Comoros
+2024-11-12 18:06:06 - Data extracted for Guam
+2024-11-12 18:06:06 - Data extracted for Tonga
+2024-11-12 18:06:06 - Data extracted for Kiribati
+2024-11-12 18:06:06 - Data extracted for Ghana
+2024-11-12 18:06:06 - Data extracted for Chad
+2024-11-12 18:06:06 - Data extracted for Zimbabwe
+2024-11-12 18:06:06 - Data extracted for Saint Martin
+2024-11-12 18:06:06 - Data extracted for Mongolia
+2024-11-12 18:06:06 - Data extracted for Portugal
+2024-11-12 18:06:06 - Data extracted for American Samoa
+2024-11-12 18:06:06 - Data extracted for Republic of the Congo
+2024-11-12 18:06:06 - Data extracted for Belgium
+2024-11-12 18:06:06 - Data extracted for Israel
+2024-11-12 18:06:06 - Data extracted for New Zealand
+2024-11-12 18:06:06 - Data extracted for Nicaragua
+2024-11-12 18:06:06 - Data extracted for Anguilla
+2024-11-12 18:06:06 - Country data saved to /Users/user/Documents/CDE-Capstone-Project/data/cleaned/countries_20241112_180620.csv
+2024-11-12 18:06:06 - Starting the Loading Phase for Cleaned Data
+2024-11-12 18:06:06 - Starting the Load Phase for /Users/user/Documents/CDE-Capstone-Project/data/cleaned/countries_20241112_180620.csv
+2024-11-12 18:06:06 - Success: File /Users/user/Documents/CDE-Capstone-Project/data/cleaned/countries_20241112_180620.csv uploaded to cde-countries as cleaned/countries_20241112_180620.csv
+2024-11-12 18:06:06 - Cleaned data file uploaded successfully

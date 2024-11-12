@@ -1,7 +1,12 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
-from main import run_extraction, run_upload_to_s3
+import os
+import sys
+
+sys.path.append(os.path.join(os.path.dirname(__file__), 'scripts'))
+
+from scripts.main import run_extraction, run_upload_to_s3
 
 # Define the DAG
 default_args = {

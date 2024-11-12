@@ -1,0 +1,244 @@
+Country_Name,independence,united_nation_members,start_of_week,official_name,common_native_name,currency_code,currency_name,currency_symbol,country_code,capital,region,subregion,languages,area,population,continents
+Grenada,True,True,monday,Grenada,Grenada,XCD,Eastern Caribbean dollar,$,++1473,St. George's,Americas,Caribbean,English,344.0,112519,North America
+Switzerland,True,True,monday,Swiss Confederation,Suisse,CHF,Swiss franc,Fr.,++41,Bern,Europe,Western Europe,"French, Swiss German, Italian, Romansh",41284.0,8654622,Europe
+Sierra Leone,True,True,monday,Republic of Sierra Leone,Sierra Leone,SLL,Sierra Leonean leone,Le,++232,Freetown,Africa,Western Africa,English,71740.0,7976985,Africa
+Hungary,True,True,monday,Hungary,Magyarország,HUF,Hungarian forint,Ft,++36,Budapest,Europe,Central Europe,Hungarian,93028.0,9749763,Europe
+Taiwan,,,monday,Republic of China (Taiwan),台灣,TWD,New Taiwan dollar,$,++886,Taipei,Asia,Eastern Asia,Chinese,36193.0,23503349,Asia
+Wallis and Futuna,,,monday,Territory of the Wallis and Futuna Islands,Wallis et Futuna,XPF,CFP franc,₣,++681,Mata-Utu,Oceania,Polynesia,French,142.0,11750,Oceania
+Barbados,True,True,monday,Barbados,Barbados,BBD,Barbadian dollar,$,++1246,Bridgetown,Americas,Caribbean,English,430.0,287371,North America
+Pitcairn Islands,,,monday,Pitcairn Group of Islands,Pitcairn Islands,NZD,New Zealand dollar,$,++64,Adamstown,Oceania,Polynesia,English,47.0,56,Oceania
+Ivory Coast,True,True,monday,Republic of Côte d'Ivoire,Côte d'Ivoire,XOF,West African CFA franc,Fr,++225,Yamoussoukro,Africa,Western Africa,French,322463.0,26378275,Africa
+Tunisia,True,True,monday,Tunisian Republic,تونس,TND,Tunisian dinar,د.ت,++216,Tunis,Africa,Northern Africa,Arabic,163610.0,11818618,Africa
+Italy,True,True,monday,Italian Republic,Italia,EUR,Euro,€,++39,Rome,Europe,Southern Europe,Italian,301336.0,59554023,Europe
+Benin,True,True,monday,Republic of Benin,Bénin,XOF,West African CFA franc,Fr,++229,Porto-Novo,Africa,Western Africa,French,112622.0,12123198,Africa
+Indonesia,True,True,monday,Republic of Indonesia,Indonesia,IDR,Indonesian rupiah,Rp,++62,Jakarta,Asia,South-Eastern Asia,Indonesian,1904569.0,273523621,Asia
+Cape Verde,True,True,monday,Republic of Cabo Verde,Cabo Verde,CVE,Cape Verdean escudo,Esc,++238,Praia,Africa,Western Africa,Portuguese,4033.0,555988,Africa
+Saint Kitts and Nevis,True,True,monday,Federation of Saint Christopher and Nevis,Saint Kitts and Nevis,XCD,Eastern Caribbean dollar,$,++1869,Basseterre,Americas,Caribbean,English,261.0,53192,North America
+Laos,True,True,monday,Lao People's Democratic Republic,ສປປລາວ,LAK,Lao kip,₭,++856,Vientiane,Asia,South-Eastern Asia,Lao,236800.0,7275556,Asia
+Caribbean Netherlands,,,monday,"Bonaire, Sint Eustatius and Saba",Caribisch Nederland,USD,United States dollar,$,++599,Kralendijk,Americas,Caribbean,"English, Dutch, Papiamento",328.0,25987,North America
+Uganda,True,True,monday,Republic of Uganda,Uganda,UGX,Ugandan shilling,Sh,++256,Kampala,Africa,Eastern Africa,"English, Swahili",241550.0,45741000,Africa
+Andorra,True,True,monday,Principality of Andorra,Andorra,EUR,Euro,€,++376,Andorra la Vella,Europe,Southern Europe,Catalan,468.0,77265,Europe
+Burundi,True,True,monday,Republic of Burundi,Burundi,BIF,Burundian franc,Fr,++257,Gitega,Africa,Eastern Africa,"French, Kirundi",27834.0,11890781,Africa
+South Africa,True,True,monday,Republic of South Africa,South Africa,ZAR,South African rand,R,++27,Pretoria,Africa,Southern Africa,"Afrikaans, English, Southern Ndebele, Northern Sotho, Southern Sotho, Swazi, Tswana, Tsonga, Venda, Xhosa, Zulu",1221037.0,59308690,Africa
+France,True,True,monday,French Republic,France,EUR,Euro,€,++33,Paris,Europe,Western Europe,French,551695.0,67391582,Europe
+Libya,True,True,sunday,State of Libya,‏ليبيا,LYD,Libyan dinar,ل.د,++218,Tripoli,Africa,Northern Africa,Arabic,1759540.0,6871287,Africa
+Mexico,True,True,monday,United Mexican States,México,MXN,Mexican peso,$,++52,Mexico City,Americas,North America,Spanish,1964375.0,128932753,North America
+Gabon,True,True,monday,Gabonese Republic,Gabon,XAF,Central African CFA franc,Fr,++241,Libreville,Africa,Middle Africa,French,267668.0,2225728,Africa
+Northern Mariana Islands,,,monday,Commonwealth of the Northern Mariana Islands,Northern Mariana Islands,USD,United States dollar,$,++1670,Saipan,Oceania,Micronesia,"Carolinian, Chamorro, English",464.0,57557,Oceania
+North Macedonia,True,True,monday,Republic of North Macedonia,Македонија,MKD,denar,den,++389,Skopje,Europe,Southeast Europe,Macedonian,25713.0,2077132,Europe
+China,True,True,monday,People's Republic of China,中国,CNY,Chinese yuan,¥,++86,Beijing,Asia,Eastern Asia,Chinese,9706961.0,1402112000,Asia
+Yemen,True,True,sunday,Republic of Yemen,اليَمَن,YER,Yemeni rial,﷼,++967,Sana'a,Asia,Western Asia,Arabic,527968.0,29825968,Asia
+Saint Barthélemy,,,monday,Collectivity of Saint Barthélemy,Saint-Barthélemy,EUR,Euro,€,++590,Gustavia,Americas,Caribbean,French,21.0,4255,North America
+Guernsey,,,monday,Bailiwick of Guernsey,Guernsey,GBP,British pound,£,++44,St. Peter Port,Europe,Northern Europe,"English, French, Guernésiais",78.0,62999,Europe
+Solomon Islands,True,True,monday,Solomon Islands,Solomon Islands,SBD,Solomon Islands dollar,$,++677,Honiara,Oceania,Melanesia,English,28896.0,686878,Oceania
+Svalbard and Jan Mayen,,,monday,Svalbard og Jan Mayen,Svalbard og Jan Mayen,NOK,krone,kr,++4779,Longyearbyen,Europe,Northern Europe,Norwegian,61399.0,2562,Europe
+Faroe Islands,,,monday,Faroe Islands,Færøerne,DKK,Danish krone,kr,++298,Tórshavn,Europe,Northern Europe,"Danish, Faroese",1393.0,48865,Europe
+Uzbekistan,True,True,monday,Republic of Uzbekistan,Узбекистан,UZS,Uzbekistani soʻm,so'm,++998,Tashkent,Asia,Central Asia,"Russian, Uzbek",447400.0,34232050,Asia
+Egypt,True,True,sunday,Arab Republic of Egypt,مصر,EGP,Egyptian pound,£,++20,Cairo,Africa,Northern Africa,Arabic,1002450.0,102334403,Africa
+Senegal,True,True,monday,Republic of Senegal,Sénégal,XOF,West African CFA franc,Fr,++221,Dakar,Africa,Western Africa,French,196722.0,16743930,Africa
+Sri Lanka,True,True,monday,Democratic Socialist Republic of Sri Lanka,ශ්‍රී ලංකාව,LKR,Sri Lankan rupee,Rs  රු,++94,Sri Jayawardenepura Kotte,Asia,Southern Asia,"Sinhala, Tamil",65610.0,21919000,Asia
+Palestine,,,sunday,State of Palestine,فلسطين,EGP,Egyptian pound,E£,++970,Ramallah,Asia,Western Asia,Arabic,6220.0,4803269,Asia
+Bangladesh,True,True,sunday,People's Republic of Bangladesh,বাংলাদেশ,BDT,Bangladeshi taka,৳,++880,Dhaka,Asia,Southern Asia,Bengali,147570.0,164689383,Asia
+Peru,True,True,monday,Republic of Peru,Piruw,PEN,Peruvian sol,S/ ,++51,Lima,Americas,South America,"Aymara, Quechua, Spanish",1285216.0,32971846,South America
+Singapore,True,True,monday,Republic of Singapore,Singapore,SGD,Singapore dollar,$,++65,Singapore,Asia,South-Eastern Asia,"English, Chinese, Malay, Tamil",710.0,5685807,Asia
+Turkey,True,True,monday,Republic of Turkey,Türkiye,TRY,Turkish lira,₺,++90,Ankara,Asia,Western Asia,Turkish,783562.0,84339067,"Europe, Asia"
+Afghanistan,True,True,monday,Islamic Republic of Afghanistan,افغانستان,AFN,Afghan afghani,؋,++93,Kabul,Asia,Southern Asia,"Dari, Pashto, Turkmen",652230.0,40218234,Asia
+Aruba,,,monday,Aruba,Aruba,AWG,Aruban florin,ƒ,++297,Oranjestad,Americas,Caribbean,"Dutch, Papiamento",180.0,106766,North America
+Cook Islands,,,monday,Cook Islands,Cook Islands,CKD,Cook Islands dollar,$,++682,Avarua,Oceania,Polynesia,"English, Cook Islands Māori",236.0,18100,Oceania
+United Kingdom,True,True,monday,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GBP,British pound,£,++44,London,Europe,Northern Europe,English,242900.0,67215293,Europe
+Zambia,True,True,monday,Republic of Zambia,Zambia,ZMW,Zambian kwacha,ZK,++260,Lusaka,Africa,Eastern Africa,English,752612.0,18383956,Africa
+Finland,True,True,monday,Republic of Finland,Suomi,EUR,Euro,€,++358,Helsinki,Europe,Northern Europe,"Finnish, Swedish",338424.0,5530719,Europe
+Niger,True,True,monday,Republic of Niger,Niger,XOF,West African CFA franc,Fr,++227,Niamey,Africa,Western Africa,French,1267000.0,24206636,Africa
+Christmas Island,,,monday,Territory of Christmas Island,Christmas Island,AUD,Australian dollar,$,++61,Flying Fish Cove,Oceania,Australia and New Zealand,English,135.0,2072,Asia
+Tokelau,,,monday,Tokelau,Tokelau,NZD,New Zealand dollar,$,++690,Fakaofo,Oceania,Polynesia,"English, Samoan, Tokelauan",12.0,1411,Oceania
+Guinea-Bissau,True,,monday,Republic of Guinea-Bissau,Guiné-Bissau,XOF,West African CFA franc,Fr,++245,Bissau,Africa,Western Africa,"Portuguese, Upper Guinea Creole",36125.0,1967998,Africa
+Azerbaijan,True,True,monday,Republic of Azerbaijan,Azərbaycan,AZN,Azerbaijani manat,₼,++994,Baku,Asia,Western Asia,Azerbaijani,86600.0,10110116,"Europe, Asia"
+Réunion,,,monday,Réunion Island,La Réunion,EUR,Euro,€,++262,Saint-Denis,Africa,Eastern Africa,French,2511.0,840974,Africa
+Djibouti,True,True,monday,Republic of Djibouti,جيبوتي‎,DJF,Djiboutian franc,Fr,++253,Djibouti,Africa,Eastern Africa,"Arabic, French",23200.0,988002,Africa
+North Korea,True,True,monday,Democratic People's Republic of Korea,조선,KPW,North Korean won,₩,++850,Pyongyang,Asia,Eastern Asia,Korean,120538.0,25778815,Asia
+Mauritius,True,True,monday,Republic of Mauritius,Mauritius,MUR,Mauritian rupee,₨,++230,Port Louis,Africa,Eastern Africa,"English, French, Mauritian Creole",2040.0,1265740,Africa
+Montserrat,,,monday,Montserrat,Montserrat,XCD,Eastern Caribbean dollar,$,++1664,Plymouth,Americas,Caribbean,English,102.0,4922,North America
+United States Virgin Islands,,,monday,Virgin Islands of the United States,United States Virgin Islands,USD,United States dollar,$,++1340,Charlotte Amalie,Americas,Caribbean,English,347.0,106290,North America
+Colombia,True,True,monday,Republic of Colombia,Colombia,COP,Colombian peso,$,++57,Bogotá,Americas,South America,Spanish,1141748.0,50882884,South America
+Greece,True,True,monday,Hellenic Republic,Ελλάδα,EUR,Euro,€,++30,Athens,Europe,Southern Europe,Greek,131990.0,10715549,Europe
+Croatia,True,True,monday,Republic of Croatia,Hrvatska,EUR,Euro,€,++385,Zagreb,Europe,Southeast Europe,Croatian,56594.0,4047200,Europe
+Morocco,True,True,monday,Kingdom of Morocco,المغرب,MAD,Moroccan dirham,د.م.,++212,Rabat,Africa,Northern Africa,"Arabic, Berber",446550.0,36910558,Africa
+Algeria,True,True,sunday,People's Democratic Republic of Algeria,الجزائر,DZD,Algerian dinar,د.ج,++213,Algiers,Africa,Northern Africa,Arabic,2381741.0,44700000,Africa
+Netherlands,True,True,monday,Kingdom of the Netherlands,Nederland,EUR,Euro,€,++31,Amsterdam,Europe,Western Europe,Dutch,41850.0,16655799,Europe
+Sudan,True,True,monday,Republic of the Sudan,السودان,SDG,Sudanese pound,ج.س,++249,Khartoum,Africa,Northern Africa,"Arabic, English",1886068.0,43849269,Africa
+Fiji,True,True,monday,Republic of Fiji,Fiji,FJD,Fijian dollar,$,++679,Suva,Oceania,Melanesia,"English, Fijian, Fiji Hindi",18272.0,896444,Oceania
+Liechtenstein,True,True,monday,Principality of Liechtenstein,Liechtenstein,CHF,Swiss franc,Fr,++423,Vaduz,Europe,Western Europe,German,160.0,38137,Europe
+Nepal,True,True,sunday,Federal Democratic Republic of Nepal,नेपाल,NPR,Nepalese rupee,₨,++977,Kathmandu,Asia,Southern Asia,Nepali,147181.0,29136808,Asia
+Puerto Rico,,,monday,Commonwealth of Puerto Rico,Puerto Rico,USD,United States dollar,$,++1787,San Juan,Americas,Caribbean,"English, Spanish",8870.0,3194034,North America
+Georgia,True,True,monday,Georgia,საქართველო,GEL,lari,₾,++995,Tbilisi,Asia,Western Asia,Georgian,69700.0,3714000,Asia
+Pakistan,True,True,monday,Islamic Republic of Pakistan,Pakistan,PKR,Pakistani rupee,₨,++92,Islamabad,Asia,Southern Asia,"English, Urdu",881912.0,220892331,Asia
+Monaco,True,True,monday,Principality of Monaco,Monaco,EUR,Euro,€,++377,Monaco,Europe,Western Europe,French,2.02,39244,Europe
+Botswana,True,True,monday,Republic of Botswana,Botswana,BWP,Botswana pula,P,++267,Gaborone,Africa,Southern Africa,"English, Tswana",582000.0,2351625,Africa
+Lebanon,True,True,monday,Lebanese Republic,لبنان,LBP,Lebanese pound,ل.ل,++961,Beirut,Asia,Western Asia,"Arabic, French",10452.0,6825442,Asia
+Papua New Guinea,True,True,monday,Independent State of Papua New Guinea,Papua New Guinea,PGK,Papua New Guinean kina,K,++675,Port Moresby,Oceania,Melanesia,"English, Hiri Motu, Tok Pisin",462840.0,8947027,Oceania
+Mayotte,,,monday,Department of Mayotte,Mayotte,EUR,Euro,€,++262,Mamoudzou,Africa,Eastern Africa,French,374.0,226915,Africa
+Dominican Republic,True,True,monday,Dominican Republic,República Dominicana,DOP,Dominican peso,$,++1809,Santo Domingo,Americas,Caribbean,Spanish,48671.0,10847904,North America
+Norfolk Island,,,monday,Territory of Norfolk Island,Norfolk Island,AUD,Australian dollar,$,++672,Kingston,Oceania,Australia and New Zealand,"English, Norfuk",36.0,2302,Oceania
+Qatar,True,True,sunday,State of Qatar,قطر,QAR,Qatari riyal,ر.ق,++974,Doha,Asia,Western Asia,Arabic,11586.0,2881060,Asia
+Madagascar,True,True,monday,Republic of Madagascar,Madagascar,MGA,Malagasy ariary,Ar,++261,Antananarivo,Africa,Eastern Africa,"French, Malagasy",587041.0,27691019,Africa
+India,True,True,monday,Republic of India,India,INR,Indian rupee,₹,++91,New Delhi,Asia,Southern Asia,"English, Hindi, Tamil",3287590.0,1380004385,Asia
+Syria,True,True,monday,Syrian Arab Republic,سوريا,SYP,Syrian pound,£,++963,Damascus,Asia,Western Asia,Arabic,185180.0,17500657,Asia
+Montenegro,True,True,monday,Montenegro,Црна Гора,EUR,Euro,€,++382,Podgorica,Europe,Southeast Europe,Montenegrin,13812.0,621718,Europe
+Eswatini,True,True,monday,Kingdom of Eswatini,Eswatini,SZL,Swazi lilangeni,L,++268,Mbabane,Africa,Southern Africa,"English, Swazi",17364.0,1160164,Africa
+Paraguay,True,True,monday,Republic of Paraguay,Paraguái,PYG,Paraguayan guaraní,₲,++595,Asunción,Americas,South America,"Guaraní, Spanish",406752.0,7132530,South America
+El Salvador,True,True,monday,Republic of El Salvador,El Salvador,USD,United States dollar,$,++503,San Salvador,Americas,Central America,Spanish,21041.0,6486201,North America
+Ukraine,True,True,monday,Ukraine,Україна,UAH,Ukrainian hryvnia,₴,++380,Kyiv,Europe,Eastern Europe,Ukrainian,603500.0,44134693,Europe
+Isle of Man,,,monday,Isle of Man,Isle of Man,GBP,British pound,£,++44,Douglas,Europe,Northern Europe,"English, Manx",572.0,85032,Europe
+Namibia,True,True,monday,Republic of Namibia,Namibië,NAD,Namibian dollar,$,++264,Windhoek,Africa,Southern Africa,"Afrikaans, German, English, Herero, Khoekhoe, Kwangali, Lozi, Ndonga, Tswana",825615.0,2540916,Africa
+United Arab Emirates,True,True,sunday,United Arab Emirates,دولة الإمارات العربية المتحدة,AED,United Arab Emirates dirham,د.إ,++971,Abu Dhabi,Asia,Western Asia,Arabic,83600.0,9890400,Asia
+Bulgaria,True,True,monday,Republic of Bulgaria,България,BGN,Bulgarian lev,лв,++359,Sofia,Europe,Southeast Europe,Bulgarian,110879.0,6927288,Europe
+Greenland,,,monday,Greenland,Kalaallit Nunaat,DKK,krone,kr.,++299,Nuuk,Americas,North America,Greenlandic,2166086.0,56367,North America
+Germany,True,True,monday,Federal Republic of Germany,Deutschland,EUR,Euro,€,++49,Berlin,Europe,Western Europe,German,357114.0,83240525,Europe
+Cambodia,True,True,monday,Kingdom of Cambodia,Kâmpŭchéa,KHR,Cambodian riel,៛,++855,Phnom Penh,Asia,South-Eastern Asia,Khmer,181035.0,16718971,Asia
+Iraq,True,True,sunday,Republic of Iraq,العراق,IQD,Iraqi dinar,ع.د,++964,Baghdad,Asia,Western Asia,"Arabic, Aramaic, Sorani",438317.0,40222503,Asia
+Sweden,True,True,monday,Kingdom of Sweden,Sverige,SEK,Swedish krona,kr,++46,Stockholm,Europe,Northern Europe,Swedish,450295.0,10353442,Europe
+Cuba,True,True,monday,Republic of Cuba,Cuba,CUC,Cuban convertible peso,$,++53,Havana,Americas,Caribbean,Spanish,109884.0,11326616,North America
+Kyrgyzstan,True,True,monday,Kyrgyz Republic,Кыргызстан,KGS,Kyrgyzstani som,с,++996,Bishkek,Asia,Central Asia,"Kyrgyz, Russian",199951.0,6591600,Asia
+Russia,True,True,monday,Russian Federation,Россия,RUB,Russian ruble,₽,++73,Moscow,Europe,Eastern Europe,Russian,17098242.0,144104080,"Europe, Asia"
+Malaysia,True,True,sunday,Malaysia,Malaysia,MYR,Malaysian ringgit,RM,++60,Kuala Lumpur,Asia,South-Eastern Asia,"English, Malay",330803.0,32365998,Asia
+São Tomé and Príncipe,True,True,monday,Democratic Republic of São Tomé and Príncipe,São Tomé e Príncipe,STN,São Tomé and Príncipe dobra,Db,++239,São Tomé,Africa,Middle Africa,Portuguese,964.0,219161,Africa
+Cyprus,True,True,monday,Republic of Cyprus,Κύπρος,EUR,Euro,€,++357,Nicosia,Europe,Southern Europe,"Greek, Turkish",9251.0,1207361,Europe
+Canada,True,True,sunday,Canada,Canada,CAD,Canadian dollar,$,++1,Ottawa,Americas,North America,"English, French",9984670.0,38005238,North America
+Malawi,True,True,monday,Republic of Malawi,Malawi,MWK,Malawian kwacha,MK,++265,Lilongwe,Africa,Eastern Africa,"English, Chewa",118484.0,19129955,Africa
+Saudi Arabia,True,True,sunday,Kingdom of Saudi Arabia,العربية السعودية,SAR,Saudi riyal,ر.س,++966,Riyadh,Asia,Western Asia,Arabic,2149690.0,34813867,Asia
+Bosnia and Herzegovina,True,True,monday,Bosnia and Herzegovina,Bosna i Hercegovina,BAM,Bosnia and Herzegovina convertible mark,KM,++387,Sarajevo,Europe,Southeast Europe,"Bosnian, Croatian, Serbian",51209.0,3280815,Europe
+Ethiopia,True,True,monday,Federal Democratic Republic of Ethiopia,ኢትዮጵያ,ETB,Ethiopian birr,Br,++251,Addis Ababa,Africa,Eastern Africa,Amharic,1104300.0,114963583,Africa
+Spain,True,True,monday,Kingdom of Spain,España,EUR,Euro,€,++34,Madrid,Europe,Southern Europe,"Spanish, Catalan, Basque, Galician",505992.0,47351567,Europe
+Slovenia,True,True,monday,Republic of Slovenia,Slovenija,EUR,Euro,€,++386,Ljubljana,Europe,Central Europe,Slovene,20273.0,2100126,Europe
+Oman,True,True,sunday,Sultanate of Oman,عمان,OMR,Omani rial,ر.ع.,++968,Muscat,Asia,Western Asia,Arabic,309500.0,5106622,Asia
+Saint Pierre and Miquelon,,,monday,Saint Pierre and Miquelon,Saint-Pierre-et-Miquelon,EUR,Euro,€,++508,Saint-Pierre,Americas,North America,French,242.0,6069,North America
+San Marino,True,True,monday,Republic of San Marino,San Marino,EUR,Euro,€,++378,City of San Marino,Europe,Southern Europe,Italian,61.0,33938,Europe
+Lesotho,True,True,monday,Kingdom of Lesotho,Lesotho,LSL,Lesotho loti,L,++266,Maseru,Africa,Southern Africa,"English, Sotho",30355.0,2142252,Africa
+Marshall Islands,True,True,monday,Republic of the Marshall Islands,Marshall Islands,USD,United States dollar,$,++692,Majuro,Oceania,Micronesia,"English, Marshallese",181.0,59194,Oceania
+Sint Maarten,,,monday,Sint Maarten,Sint Maarten,ANG,Netherlands Antillean guilder,ƒ,++1721,Philipsburg,Americas,Caribbean,"English, French, Dutch",34.0,40812,North America
+Iceland,True,True,monday,Iceland,Ísland,ISK,Icelandic króna,kr,++354,Reykjavik,Europe,Northern Europe,Icelandic,103000.0,366425,Europe
+Luxembourg,True,True,monday,Grand Duchy of Luxembourg,Luxemburg,EUR,Euro,€,++352,Luxembourg,Europe,Western Europe,"German, French, Luxembourgish",2586.0,632275,Europe
+Argentina,True,True,monday,Argentine Republic,Argentina,ARS,Argentine peso,$,++54,Buenos Aires,Americas,South America,"Guaraní, Spanish",2780400.0,45376763,South America
+Turks and Caicos Islands,,,monday,Turks and Caicos Islands,Turks and Caicos Islands,USD,United States dollar,$,++1649,Cockburn Town,Americas,Caribbean,English,948.0,38718,North America
+Nauru,True,True,monday,Republic of Nauru,Nauru,AUD,Australian dollar,$,++674,Yaren,Oceania,Micronesia,"English, Nauru",21.0,10834,Oceania
+Cocos (Keeling) Islands,,,monday,Territory of the Cocos (Keeling) Islands,Cocos (Keeling) Islands,AUD,Australian dollar,$,++61,West Island,Oceania,Australia and New Zealand,English,14.0,544,Asia
+Western Sahara,,,monday,Sahrawi Arab Democratic Republic,Western Sahara,DZD,Algerian dinar,دج,++2125288,El Aaiún,Africa,Northern Africa,"Berber, Hassaniya, Spanish",266000.0,510713,Africa
+Dominica,True,True,monday,Commonwealth of Dominica,Dominica,XCD,Eastern Caribbean dollar,$,++1767,Roseau,Americas,Caribbean,English,751.0,71991,North America
+Costa Rica,True,True,monday,Republic of Costa Rica,Costa Rica,CRC,Costa Rican colón,₡,++506,San José,Americas,Central America,Spanish,51100.0,5094114,North America
+Australia,True,True,monday,Commonwealth of Australia,Australia,AUD,Australian dollar,$,++61,Canberra,Oceania,Australia and New Zealand,English,7692024.0,25687041,Oceania
+Thailand,True,True,monday,Kingdom of Thailand,ประเทศไทย,THB,Thai baht,฿,++66,Bangkok,Asia,South-Eastern Asia,Thai,513120.0,69799978,Asia
+Haiti,True,True,monday,Republic of Haiti,Haïti,HTG,Haitian gourde,G,++509,Port-au-Prince,Americas,Caribbean,"French, Haitian Creole",27750.0,11402533,North America
+Tuvalu,True,True,monday,Tuvalu,Tuvalu,AUD,Australian dollar,$,++688,Funafuti,Oceania,Polynesia,"English, Tuvaluan",26.0,11792,Oceania
+Honduras,True,True,monday,Republic of Honduras,Honduras,HNL,Honduran lempira,L,++504,Tegucigalpa,Americas,Central America,Spanish,112492.0,9904608,North America
+Equatorial Guinea,True,True,monday,Republic of Equatorial Guinea,Guinée équatoriale,XAF,Central African CFA franc,Fr,++240,Malabo,Africa,Middle Africa,"French, Portuguese, Spanish",28051.0,1402985,Africa
+Saint Lucia,True,True,monday,Saint Lucia,Saint Lucia,XCD,Eastern Caribbean dollar,$,++1758,Castries,Americas,Caribbean,English,616.0,183629,North America
+French Polynesia,,,monday,French Polynesia,Polynésie française,XPF,CFP franc,₣,++689,Papeetē,Oceania,Polynesia,French,4167.0,280904,Oceania
+Belarus,True,True,monday,Republic of Belarus,Белару́сь,BYN,Belarusian ruble,Br,++375,Minsk,Europe,Eastern Europe,"Belarusian, Russian",207600.0,9398861,Europe
+Latvia,True,True,monday,Republic of Latvia,Latvija,EUR,Euro,€,++371,Riga,Europe,Northern Europe,Latvian,64559.0,1901548,Europe
+Palau,True,True,monday,Republic of Palau,Palau,USD,United States dollar,$,++680,Ngerulmud,Oceania,Micronesia,"English, Palauan",459.0,18092,Oceania
+Guadeloupe,,,monday,Guadeloupe,Guadeloupe,EUR,Euro,€,++590,Basse-Terre,Americas,Caribbean,French,1628.0,400132,North America
+Philippines,True,True,monday,Republic of the Philippines,Philippines,PHP,Philippine peso,₱,++63,Manila,Asia,South-Eastern Asia,"English, Filipino",342353.0,109581085,Asia
+Gibraltar,,,monday,Gibraltar,Gibraltar,GIP,Gibraltar pound,£,++350,Gibraltar,Europe,Southern Europe,English,6.0,33691,Europe
+Denmark,True,True,monday,Kingdom of Denmark,Danmark,DKK,Danish krone,kr,++45,Copenhagen,Europe,Northern Europe,Danish,43094.0,5831404,Europe
+Cameroon,True,True,monday,Republic of Cameroon,Cameroon,XAF,Central African CFA franc,Fr,++237,Yaoundé,Africa,Middle Africa,"English, French",475442.0,26545864,Africa
+Guinea,True,True,monday,Republic of Guinea,Guinée,GNF,Guinean franc,Fr,++224,Conakry,Africa,Western Africa,French,245857.0,13132792,Africa
+Bahrain,True,True,monday,Kingdom of Bahrain,‏البحرين,BHD,Bahraini dinar,.د.ب,++973,Manama,Asia,Western Asia,Arabic,765.0,1701583,Asia
+Suriname,True,True,monday,Republic of Suriname,Suriname,SRD,Surinamese dollar,$,++597,Paramaribo,Americas,South America,Dutch,163820.0,586634,South America
+DR Congo,True,True,monday,Democratic Republic of the Congo,RD Congo,CDF,Congolese franc,FC,++243,Kinshasa,Africa,Middle Africa,"French, Kikongo, Lingala, Tshiluba, Swahili",2344858.0,108407721,Africa
+Somalia,True,True,monday,Federal Republic of Somalia,الصومال‎‎,SOS,Somali shilling,Sh,++252,Mogadishu,Africa,Eastern Africa,"Arabic, Somali",637657.0,15893219,Africa
+Czechia,True,True,monday,Czech Republic,Česko,CZK,Czech koruna,Kč,++420,Prague,Europe,Central Europe,"Czech, Slovak",78865.0,10698896,Europe
+New Caledonia,,,monday,New Caledonia,Nouvelle-Calédonie,XPF,CFP franc,₣,++687,Nouméa,Oceania,Melanesia,French,18575.0,271960,Oceania
+Vanuatu,True,True,monday,Republic of Vanuatu,Vanuatu,VUV,Vanuatu vatu,Vt,++678,Port Vila,Oceania,Melanesia,"Bislama, English, French",12189.0,307150,Oceania
+"Saint Helena, Ascension and Tristan da Cunha",,,monday,"Saint Helena, Ascension and Tristan da Cunha","Saint Helena, Ascension and Tristan da Cunha",GBP,Pound sterling,£,++290,Jamestown,Africa,Western Africa,English,394.0,53192,Africa
+Togo,True,True,monday,Togolese Republic,Togo,XOF,West African CFA franc,Fr,++228,Lomé,Africa,Western Africa,French,56785.0,8278737,Africa
+British Virgin Islands,,,monday,Virgin Islands,British Virgin Islands,USD,United States dollar,$,++1284,Road Town,Americas,Caribbean,English,151.0,30237,North America
+Kenya,True,True,monday,Republic of Kenya,Kenya,KES,Kenyan shilling,Sh,++254,Nairobi,Africa,Eastern Africa,"English, Swahili",580367.0,53771300,Africa
+Niue,,,monday,Niue,Niue,NZD,New Zealand dollar,$,++683,Alofi,Oceania,Polynesia,"English, Niuean",260.0,1470,Oceania
+Rwanda,True,True,monday,Republic of Rwanda,Rwanda,RWF,Rwandan franc,Fr,++250,Kigali,Africa,Eastern Africa,"English, French, Kinyarwanda",26338.0,12952209,Africa
+Estonia,True,True,monday,Republic of Estonia,Eesti,EUR,Euro,€,++372,Tallinn,Europe,Northern Europe,Estonian,45227.0,1331057,Europe
+Romania,True,True,monday,Romania,România,RON,Romanian leu,lei,++40,Bucharest,Europe,Southeast Europe,Romanian,238391.0,19286123,Europe
+Trinidad and Tobago,True,True,monday,Republic of Trinidad and Tobago,Trinidad and Tobago,TTD,Trinidad and Tobago dollar,$,++1868,Port of Spain,Americas,Caribbean,English,5130.0,1399491,North America
+Guyana,True,True,monday,Co-operative Republic of Guyana,Guyana,GYD,Guyanese dollar,$,++592,Georgetown,Americas,South America,English,214969.0,786559,South America
+Timor-Leste,True,True,monday,Democratic Republic of Timor-Leste,Timor-Leste,USD,United States dollar,$,++670,Dili,Asia,South-Eastern Asia,"Portuguese, Tetum",14874.0,1318442,Oceania
+Vietnam,True,True,monday,Socialist Republic of Vietnam,Việt Nam,VND,Vietnamese đồng,₫,++84,Hanoi,Asia,South-Eastern Asia,Vietnamese,331212.0,97338583,Asia
+Uruguay,True,True,monday,Oriental Republic of Uruguay,Uruguay,UYU,Uruguayan peso,$,++598,Montevideo,Americas,South America,Spanish,181034.0,3473727,South America
+Vatican City,True,,monday,Vatican City State,Vaticano,EUR,Euro,€,++3906698,Vatican City,Europe,Southern Europe,"Italian, Latin",0.44,451,Europe
+Hong Kong,,,monday,Hong Kong Special Administrative Region of the People's Republic of China,Hong Kong,HKD,Hong Kong dollar,$,++852,City of Victoria,Asia,Eastern Asia,"English, Chinese",1104.0,7500700,Asia
+Austria,True,True,monday,Republic of Austria,Österreich,EUR,Euro,€,++43,Vienna,Europe,Central Europe,German,83871.0,8917205,Europe
+Antigua and Barbuda,True,True,monday,Antigua and Barbuda,Antigua and Barbuda,XCD,Eastern Caribbean dollar,$,++1268,Saint John's,Americas,Caribbean,English,442.0,97928,North America
+Turkmenistan,True,True,monday,Turkmenistan,Туркмения,TMT,Turkmenistan manat,m,++993,Ashgabat,Asia,Central Asia,"Russian, Turkmen",488100.0,6031187,Asia
+Mozambique,True,True,monday,Republic of Mozambique,Moçambique,MZN,Mozambican metical,MT,++258,Maputo,Africa,Eastern Africa,Portuguese,801590.0,31255435,Africa
+Panama,True,True,monday,Republic of Panama,Panamá,PAB,Panamanian balboa,B/.,++507,Panama City,Americas,Central America,Spanish,75417.0,4314768,North America
+Micronesia,True,True,monday,Federated States of Micronesia,Micronesia,USD,United States dollar,$,++691,Palikir,Oceania,Micronesia,English,702.0,115021,Oceania
+Ireland,True,True,monday,Republic of Ireland,Ireland,EUR,Euro,€,++353,Dublin,Europe,Northern Europe,"English, Irish",70273.0,4994724,Europe
+Curaçao,,,monday,Country of Curaçao,Curaçao,ANG,Netherlands Antillean guilder,ƒ,++599,Willemstad,Americas,Caribbean,"English, Dutch, Papiamento",444.0,155014,North America
+French Guiana,,,monday,Guiana,Guyane française,EUR,Euro,€,++594,Cayenne,Americas,South America,French,83534.0,254541,South America
+Norway,True,True,monday,Kingdom of Norway,Noreg,NOK,Norwegian krone,kr,++47,Oslo,Europe,Northern Europe,"Norwegian Nynorsk, Norwegian Bokmål, Sami",323802.0,5379475,Europe
+Åland Islands,,,monday,Åland Islands,Åland,EUR,Euro,€,++35818,Mariehamn,Europe,Northern Europe,Swedish,1580.0,29458,Europe
+Central African Republic,True,True,monday,Central African Republic,République centrafricaine,XAF,Central African CFA franc,Fr,++236,Bangui,Africa,Middle Africa,"French, Sango",622984.0,4829764,Africa
+Burkina Faso,True,True,monday,Burkina Faso,Burkina Faso,XOF,West African CFA franc,Fr,++226,Ouagadougou,Africa,Western Africa,French,272967.0,20903278,Africa
+Eritrea,True,True,monday,State of Eritrea,إرتريا‎,ERN,Eritrean nakfa,Nfk,++291,Asmara,Africa,Eastern Africa,"Arabic, English, Tigrinya",117600.0,5352000,Africa
+Tanzania,True,True,monday,United Republic of Tanzania,Tanzania,TZS,Tanzanian shilling,Sh,++255,Dodoma,Africa,Eastern Africa,"English, Swahili",945087.0,59734213,Africa
+South Korea,True,True,monday,Republic of Korea,한국,KRW,South Korean won,₩,++82,Seoul,Asia,Eastern Asia,Korean,100210.0,51780579,Asia
+Jordan,True,True,sunday,Hashemite Kingdom of Jordan,الأردن,JOD,Jordanian dinar,د.ا,++962,Amman,Asia,Western Asia,Arabic,89342.0,10203140,Asia
+Mauritania,True,True,monday,Islamic Republic of Mauritania,موريتانيا,MRU,Mauritanian ouguiya,UM,++222,Nouakchott,Africa,Western Africa,Arabic,1030700.0,4649660,Africa
+Lithuania,True,True,monday,Republic of Lithuania,Lietuva,EUR,Euro,€,++370,Vilnius,Europe,Northern Europe,Lithuanian,65300.0,2794700,Europe
+United States Minor Outlying Islands,,,monday,United States Minor Outlying Islands,United States Minor Outlying Islands,USD,United States dollar,$,++268,Washington DC,Americas,North America,English,34.2,300,Oceania
+Slovakia,True,True,monday,Slovak Republic,Slovensko,EUR,Euro,€,++421,Bratislava,Europe,Central Europe,Slovak,49037.0,5458827,Europe
+Angola,True,True,monday,Republic of Angola,Angola,AOA,Angolan kwanza,Kz,++244,Luanda,Africa,Middle Africa,Portuguese,1246700.0,32866268,Africa
+Kazakhstan,True,True,monday,Republic of Kazakhstan,Қазақстан,KZT,Kazakhstani tenge,₸,++76,Nur-Sultan,Asia,Central Asia,"Kazakh, Russian",2724900.0,18754440,Asia
+Moldova,True,True,monday,Republic of Moldova,Moldova,MDL,Moldovan leu,L,++373,Chișinău,Europe,Eastern Europe,Romanian,33846.0,2617820,Europe
+Mali,True,True,monday,Republic of Mali,Mali,XOF,West African CFA franc,Fr,++223,Bamako,Africa,Western Africa,French,1240192.0,20250834,Africa
+Falkland Islands,,,monday,Falkland Islands,Falkland Islands,FKP,Falkland Islands pound,£,++500,Stanley,Americas,South America,English,12173.0,2563,South America
+Armenia,True,True,monday,Republic of Armenia,Հայաստան,AMD,Armenian dram,֏,++374,Yerevan,Asia,Western Asia,Armenian,29743.0,2963234,Asia
+Samoa,True,True,monday,Independent State of Samoa,Samoa,WST,Samoan tālā,T,++685,Apia,Oceania,Polynesia,"English, Samoan",2842.0,198410,Oceania
+Jersey,,,monday,Bailiwick of Jersey,Jersey,GBP,British pound,£,++44,Saint Helier,Europe,Northern Europe,"English, French, Jèrriais",116.0,100800,Europe
+Japan,True,True,monday,Japan,日本,JPY,Japanese yen,¥,++81,Tokyo,Asia,Eastern Asia,Japanese,377930.0,125836021,Asia
+Bolivia,True,True,monday,Plurinational State of Bolivia,Wuliwya,BOB,Bolivian boliviano,Bs.,++591,Sucre,Americas,South America,"Aymara, Guaraní, Quechua, Spanish",1098581.0,11673029,South America
+Chile,True,True,monday,Republic of Chile,Chile,CLP,Chilean peso,$,++56,Santiago,Americas,South America,Spanish,756102.0,19116209,South America
+United States,True,True,sunday,United States of America,United States,USD,United States dollar,$,++1201,"Washington, D.C.",Americas,North America,English,9372610.0,329484123,North America
+Saint Vincent and the Grenadines,True,True,monday,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,XCD,Eastern Caribbean dollar,$,++1784,Kingstown,Americas,Caribbean,English,389.0,110947,North America
+Bermuda,,,monday,Bermuda,Bermuda,BMD,Bermudian dollar,$,++1441,Hamilton,Americas,North America,English,54.0,63903,North America
+Seychelles,True,True,monday,Republic of Seychelles,Sesel,SCR,Seychellois rupee,₨,++248,Victoria,Africa,Eastern Africa,"Seychellois Creole, English, French",452.0,98462,Africa
+British Indian Ocean Territory,,,monday,British Indian Ocean Territory,British Indian Ocean Territory,USD,United States dollar,$,++246,Diego Garcia,Africa,Eastern Africa,English,60.0,3000,Asia
+Guatemala,True,True,monday,Republic of Guatemala,Guatemala,GTQ,Guatemalan quetzal,Q,++502,Guatemala City,Americas,Central America,Spanish,108889.0,16858333,North America
+Ecuador,True,True,monday,Republic of Ecuador,Ecuador,USD,United States dollar,$,++593,Quito,Americas,South America,Spanish,276841.0,17643060,South America
+Martinique,,,monday,Martinique,Martinique,EUR,Euro,€,++596,Fort-de-France,Americas,Caribbean,French,1128.0,378243,North America
+Tajikistan,True,True,monday,Republic of Tajikistan,Таджикистан,TJS,Tajikistani somoni,ЅМ,++992,Dushanbe,Asia,Central Asia,"Russian, Tajik",143100.0,9537642,Asia
+Malta,True,True,monday,Republic of Malta,Malta,EUR,Euro,€,++356,Valletta,Europe,Southern Europe,"English, Maltese",316.0,525285,Europe
+Gambia,True,True,monday,Republic of the Gambia,Gambia,GMD,dalasi,D,++220,Banjul,Africa,Western Africa,English,10689.0,2416664,Africa
+Nigeria,True,True,monday,Federal Republic of Nigeria,Nigeria,NGN,Nigerian naira,₦,++234,Abuja,Africa,Western Africa,English,923768.0,206139587,Africa
+Bahamas,True,True,monday,Commonwealth of the Bahamas,Bahamas,BSD,Bahamian dollar,$,++1242,Nassau,Americas,Caribbean,English,13943.0,393248,North America
+Kuwait,True,True,sunday,State of Kuwait,الكويت,KWD,Kuwaiti dinar,د.ك,++965,Kuwait City,Asia,Western Asia,Arabic,17818.0,4270563,Asia
+Maldives,True,True,sunday,Republic of the Maldives,ދިވެހިރާއްޖޭގެ,MVR,Maldivian rufiyaa,.ރ,++960,Malé,Asia,Southern Asia,Maldivian,300.0,540542,Asia
+South Sudan,True,True,sunday,Republic of South Sudan,South Sudan,SSP,South Sudanese pound,£,++211,Juba,Africa,Middle Africa,English,619745.0,11193729,Africa
+Iran,True,True,saturday,Islamic Republic of Iran,ایران,IRR,Iranian rial,﷼,++98,Tehran,Asia,Southern Asia,Persian (Farsi),1648195.0,83992953,Asia
+Albania,True,True,monday,Republic of Albania,Shqipëria,ALL,Albanian lek,L,++355,Tirana,Europe,Southeast Europe,Albanian,28748.0,2837743,Europe
+Brazil,True,True,monday,Federative Republic of Brazil,Brasil,BRL,Brazilian real,R$,++55,Brasília,Americas,South America,Portuguese,8515767.0,212559409,South America
+Serbia,True,True,monday,Republic of Serbia,Србија,RSD,Serbian dinar,дин.,++381,Belgrade,Europe,Southeast Europe,Serbian,88361.0,6908224,Europe
+Belize,True,True,monday,Belize,Belize,BZD,Belize dollar,$,++501,Belmopan,Americas,Central America,"Belizean Creole, English, Spanish",22966.0,397621,North America
+Myanmar,True,True,monday,Republic of the Union of Myanmar,မြန်မာ,MMK,Burmese kyat,Ks,++95,Naypyidaw,Asia,South-Eastern Asia,Burmese,676578.0,54409794,Asia
+Bhutan,True,True,monday,Kingdom of Bhutan,འབྲུག་ཡུལ་,BTN,Bhutanese ngultrum,Nu.,++975,Thimphu,Asia,Southern Asia,Dzongkha,38394.0,771612,Asia
+Venezuela,True,True,monday,Bolivarian Republic of Venezuela,Venezuela,VES,Venezuelan bolívar soberano,Bs.S.,++58,Caracas,Americas,South America,Spanish,916445.0,28435943,South America
+Liberia,True,True,monday,Republic of Liberia,Liberia,LRD,Liberian dollar,$,++231,Monrovia,Africa,Western Africa,English,111369.0,5057677,Africa
+Jamaica,True,True,monday,Jamaica,Jamaica,JMD,Jamaican dollar,$,++1876,Kingston,Americas,Caribbean,"English, Jamaican Patois",10991.0,2961161,North America
+Poland,True,True,monday,Republic of Poland,Polska,PLN,Polish złoty,zł,++48,Warsaw,Europe,Central Europe,Polish,312679.0,37950802,Europe
+Cayman Islands,,,monday,Cayman Islands,Cayman Islands,KYD,Cayman Islands dollar,$,++1345,George Town,Americas,Caribbean,English,264.0,65720,North America
+Brunei,True,True,monday,"Nation of Brunei, Abode of Peace",Negara Brunei Darussalam,BND,Brunei dollar,$,++673,Bandar Seri Begawan,Asia,South-Eastern Asia,Malay,5765.0,437483,Asia
+Comoros,True,True,monday,Union of the Comoros,القمر‎,KMF,Comorian franc,Fr,++269,Moroni,Africa,Eastern Africa,"Arabic, French, Comorian",1862.0,869595,Africa
+Guam,,,monday,Guam,Guåhån,USD,United States dollar,$,++1671,Hagåtña,Oceania,Micronesia,"Chamorro, English, Spanish",549.0,168783,Oceania
+Tonga,True,True,monday,Kingdom of Tonga,Tonga,TOP,Tongan paʻanga,T$,++676,Nuku'alofa,Oceania,Polynesia,"English, Tongan",747.0,105697,Oceania
+Kiribati,True,True,monday,Independent and Sovereign Republic of Kiribati,Kiribati,AUD,Australian dollar,$,++686,South Tarawa,Oceania,Micronesia,"English, Gilbertese",811.0,119446,Oceania
+Ghana,True,True,monday,Republic of Ghana,Ghana,GHS,Ghanaian cedi,₵,++233,Accra,Africa,Western Africa,English,238533.0,31072945,Africa
+Chad,True,True,monday,Republic of Chad,تشاد‎,XAF,Central African CFA franc,Fr,++235,N'Djamena,Africa,Middle Africa,"Arabic, French",1284000.0,16425859,Africa
+Zimbabwe,True,True,monday,Republic of Zimbabwe,Zimbabwe,ZWL,Zimbabwean dollar,$,++263,Harare,Africa,Southern Africa,"Chibarwe, English, Kalanga, Khoisan, Ndau, Northern Ndebele, Chewa, Shona, Sotho, Tonga, Tswana, Tsonga, Venda, Xhosa, Zimbabwean Sign Language",390757.0,14862927,Africa
+Saint Martin,,,monday,Saint Martin,Saint-Martin,EUR,Euro,€,++590,Marigot,Americas,Caribbean,French,53.0,38659,North America
+Mongolia,True,True,monday,Mongolia,Монгол улс,MNT,Mongolian tögrög,₮,++976,Ulan Bator,Asia,Eastern Asia,Mongolian,1564110.0,3278292,Asia
+Portugal,True,True,monday,Portuguese Republic,Portugal,EUR,Euro,€,++351,Lisbon,Europe,Southern Europe,Portuguese,92090.0,10305564,Europe
+American Samoa,,,monday,American Samoa,American Samoa,USD,United States dollar,$,++1684,Pago Pago,Oceania,Polynesia,"English, Samoan",199.0,55197,Oceania
+Republic of the Congo,True,True,monday,Republic of the Congo,République du Congo,XAF,Central African CFA franc,Fr,++242,Brazzaville,Africa,Middle Africa,"French, Kikongo, Lingala",342000.0,5657000,Africa
+Belgium,True,True,monday,Kingdom of Belgium,Belgien,EUR,Euro,€,++32,Brussels,Europe,Western Europe,"German, French, Dutch",30528.0,11555997,Europe
+Israel,True,True,sunday,State of Israel,إسرائيل,ILS,Israeli new shekel,₪,++972,Jerusalem,Asia,Western Asia,"Arabic, Hebrew",20770.0,9216900,Asia
+New Zealand,True,True,monday,New Zealand,New Zealand,NZD,New Zealand dollar,$,++64,Wellington,Oceania,Australia and New Zealand,"English, Māori, New Zealand Sign Language",270467.0,5084300,Oceania
+Nicaragua,True,True,monday,Republic of Nicaragua,Nicaragua,NIO,Nicaraguan córdoba,C$,++505,Managua,Americas,Central America,Spanish,130373.0,6624554,North America
+Anguilla,,,monday,Anguilla,Anguilla,XCD,Eastern Caribbean dollar,$,++1264,The Valley,Americas,Caribbean,English,91.0,13452,North America
