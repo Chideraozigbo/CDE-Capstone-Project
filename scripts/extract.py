@@ -1,8 +1,7 @@
 import requests
 import json
-from datetime import datetime, time 
+from datetime import datetime, time
 import os
-import pandas as pd
 
 # constants
 time_format = '%Y-%m-%d %H:%M:%S'
@@ -20,21 +19,24 @@ data_dir = os.path.join(base_dir, 'data/raw/')
 with open(log_dir, 'w') as f:
     f.write(f'{current_date} - Log file cleared for new logs \n')
 
+
 # Log function
 def log(message):
     current_date = now.strftime(time_format)
     with open(log_dir, 'a') as f:
         f.write(f'{current_date} - {message}\n')
 
+
 def extract_data(url):
     for retry in range(max_retries):
         try:
-            log(f"Attempting to fetch data (attempt {retry + 1}/{max_retries})")
+            log(
+                f"Attempting to fetch data (attempt {retry + 1}/{max_retries})"
+                )
             response = requests.get(url)
             response.raise_for_status()
             data = response.json()
             log(f"Successfully retrieved data for {len(data)} countries")
-            
             # Save the data as a JSON file
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
             json_file = f'countries_{timestamp}.json'
@@ -43,7 +45,6 @@ def extract_data(url):
                 json.dump(data, f, indent=2)
             log(f"Data saved as: {json_file}")
             log(f"File path: {json_path}")
-            
             return json_file, json_path
         except requests.exceptions.RequestException as e:
             log(f"Error fetching data: {str(e)}", level='error')

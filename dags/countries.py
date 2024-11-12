@@ -6,7 +6,7 @@ import sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__), 'scripts'))
 
-from scripts.main import run_extraction, run_upload_to_s3
+from scripts.main import run_extraction, run_upload_raw_to_s3, run_load_data_from_s3, run_extract_country_data, run_upload_cleaned_to_s3
 
 # Define the DAG
 default_args = {
@@ -27,17 +27,39 @@ countries_dag = DAG(
 )
 
 extract_task = PythonOperator(
-    task_id='extract_and_process_task',
+    task_id='extract_data_task',
     python_callable=run_extraction,
     provides_context=True,
     dag=countries_dag
 )
 
-transform_task = PythonOperator(
-    task_id='transform_data_task',
-    python_callable=run_upload_to_s3,
+raw_upload_task = PythonOperator(
+    task_id='upload_raw_to_s3_task',
+    python_callable=run_upload_raw_to_s3,
     provides_context=True,
     dag=countries_dag
 )
 
-extract_task >> transform_task
+raw_load_task = PythonOperator(
+    task_id='load_data_from_s3_task',
+    python_callable=run_load_data_from_s3,
+    provides_context=True,
+    dag=countries_dag
+)
+
+extract_country_data_task = PythonOperator(
+    task_id='extract_country_data_task',
+    python_callable=run_extract_country_data,
+    provides_context=True,
+    dag=countries_dag
+)
+
+cleaned_upload_task = PythonOperator(
+    task_id='upload_cleaned_to_s3_task',
+    python_callable=run_upload_cleaned_to_s3,
+    provides_context=True,
+    dag=countries_dag
+)
+
+
+extract_task >> raw_upload_task >> raw_load_task >> extract_country_data_task >> cleaned_upload_task

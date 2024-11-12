@@ -16,5 +16,7 @@ include/
 plugins/
 packages.txt
 credentials/
+tests/
+test.py
 
 
