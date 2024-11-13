@@ -3,7 +3,7 @@ import os
 
 import boto3
 from botocore.exceptions import ClientError
-from extract import log
+from .extract import log
 
 # constants
 base_dir = os.getcwd() + "/"

@@ -1,6 +1,6 @@
-from download_and_process import extract_country_data, get_json_data_from_s3
-from extract import extract_data, log
-from upload_to_s3 import upload_to_s3
+from .download import extract_country_data, get_json_data_from_s3
+from .extract import extract_data, log
+from .upload_to_s3 import upload_to_s3
 
 # Constants
 url = "https://restcountries.com/v3.1/all"
@@ -63,11 +63,16 @@ def run_extract_country_data(**kwargs):
 
 def run_upload_cleaned_to_s3(**kwargs):
     cleaned_file = kwargs["ti"].xcom_pull(
-        task_ids="extract_country_data", key="cleaned_file"
+        task_ids="extract_country_data_task", key="cleaned_file"
     )
     cleaned_file_path = kwargs["ti"].xcom_pull(
-        task_ids="extract_country_data", key="cleaned_file_path"
+        task_ids="extract_country_data_task", key="cleaned_file_path"
     )
+
+    if cleaned_file_path is None:
+        log("Error: Cleaned file path is None. Unable to upload to S3.")
+        raise Exception("Cleaned file path is None. Unable to upload to S3.")
+
     cleaned_object_s3_path = f"cleaned/{cleaned_file}"
     cleaned_upload_success = upload_to_s3(
         cleaned_file_path, bucket_name, cleaned_object_s3_path

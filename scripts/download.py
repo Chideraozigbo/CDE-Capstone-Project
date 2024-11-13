@@ -5,7 +5,7 @@ from datetime import datetime
 
 import boto3
 import pandas as pd
-from extract import log
+from .extract import log
 
 base_dir = os.getcwd() + "/"
 config_dir = os.path.join(base_dir, "credentials/config.ini")
