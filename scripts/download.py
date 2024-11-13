@@ -5,6 +5,7 @@ from datetime import datetime
 
 import boto3
 import pandas as pd
+
 from .extract import log
 
 base_dir = os.getcwd() + "/"
