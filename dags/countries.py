@@ -6,8 +6,8 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 from scripts.main import (run_extract_country_data, run_extraction,
-                           run_load_data_from_s3, run_upload_cleaned_to_s3,
-                           run_upload_raw_to_s3)
+                          run_load_data_from_s3, run_upload_cleaned_to_s3,
+                          run_upload_raw_to_s3)
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "scripts"))
 
