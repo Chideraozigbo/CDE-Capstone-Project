@@ -4,7 +4,8 @@ from datetime import datetime, timedelta
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from cosmos import DbtTaskGroup, ProjectConfig, ProfileConfig, ExecutionConfig
+from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+from cosmos.profiles import SnowflakeUserPasswordProfileMapping
 
 sys.path.append(
     os.path.join(os.path.dirname(os.path.dirname(__file__)), "scripts")
@@ -19,6 +20,15 @@ from scripts.main import (
     run_upload_cleaned_to_s3,
     run_upload_raw_to_s3,
     truncate_snowflake_table,
+)
+
+profile_config = ProfileConfig(
+    profile_name="default",
+    target_name="dev",
+    profile_mapping=SnowflakeUserPasswordProfileMapping(
+        conn_id="snowflake_conn", 
+        profile_args={"database": "dbt_db", "schema": "dbt_schema"},
+    )
 )
 
 # Define the DAG

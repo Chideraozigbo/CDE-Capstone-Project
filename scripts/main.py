@@ -91,7 +91,7 @@ def run_upload_cleaned_to_s3(**kwargs):
 def truncate_snowflake_table(**kwargs):
     try:
         log("Starting Snowflake table truncate operation...")
-        snowflake_hook = SnowflakeHook(snowflake_conn_id="snowflake_default")
+        snowflake_hook = SnowflakeHook(snowflake_conn_id="snowflake_default1")
         log(
             f"Successfully connected to Snowflake"
             f"using connection ID: {snowflake_hook}"
@@ -126,7 +126,7 @@ def load_s3_to_snowflake(**kwargs):
         aws_access_key = Variable.get("aws_access_key")
         aws_secret_key = Variable.get("aws_secret_key")
 
-        snowflake_hook = SnowflakeHook(snowflake_conn_id="snowflake_default")
+        snowflake_hook = SnowflakeHook(snowflake_conn_id="snowflake_default1")
         log(
             f"Successfully connected to Snowflake"
             f"using connection ID: {snowflake_hook}"
