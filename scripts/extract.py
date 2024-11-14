@@ -23,6 +23,15 @@ with open(log_dir, "w") as f:
 
 # Log function
 def log(message):
+    """
+    Logs a message to the specified log file.
+
+    Parameters:
+    message (str): The message to be logged.
+
+    Returns:
+    None
+    """
     current_date = now.strftime(time_format)
     with open(log_dir, "a") as f:
         f.write(f"{current_date} - {message}\n")
@@ -32,7 +41,8 @@ def extract_data(url):
     for retry in range(max_retries):
         try:
             log(
-                f"Attempting to fetch data (attempt {retry + 1}/{max_retries})"
+                f"Attempting to fetch data"
+                f"(attempt {retry + 1}/{max_retries})"
             )
             response = requests.get(url)
             response.raise_for_status()

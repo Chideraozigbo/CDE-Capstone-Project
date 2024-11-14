@@ -1,3 +1,6 @@
+from airflow.models import Variable
+from airflow.providers.snowflake.hooks.snowflake import SnowflakeHook
+
 from .download import extract_country_data, get_json_data_from_s3
 from .extract import extract_data, log
 from .upload_to_s3 import upload_to_s3
@@ -78,6 +81,77 @@ def run_upload_cleaned_to_s3(**kwargs):
         cleaned_file_path, bucket_name, cleaned_object_s3_path
     )
     if cleaned_upload_success:
+        s3_full_path = f"s3://{bucket_name}/{cleaned_object_s3_path}"
+        kwargs["ti"].xcom_push(key="cleaned_s3_path", value=s3_full_path)
         log("Cleaned data file uploaded successfully")
     else:
         raise Exception("Failed to upload cleaned data to S3")
+
+
+def truncate_snowflake_table(**kwargs):
+    try:
+        log("Starting Snowflake table truncate operation...")
+        snowflake_hook = SnowflakeHook(snowflake_conn_id="snowflake_default")
+        log(
+            f"Successfully connected to Snowflake"
+            f"using connection ID: {snowflake_hook}"
+        )
+
+        truncate_query = "TRUNCATE TABLE country_data"
+        log(f"Executing truncate query: {truncate_query}")
+
+        snowflake_hook.run(truncate_query)
+        log("Successfully truncated Snowflake table")
+
+    except Exception as e:
+        log(f"Failed to truncate Snowflake table: {str(e)}")
+        raise Exception(f"Failed to truncate Snowflake table: {str(e)}")
+
+
+def load_s3_to_snowflake(**kwargs):
+    try:
+        log("Starting S3 to Snowflake data load operation...")
+
+        s3_path = kwargs["ti"].xcom_pull(
+            task_ids="upload_cleaned_to_s3_task", key="cleaned_s3_path"
+        )
+        log(f"Retrieved S3 path from XCom: {s3_path}")
+
+        if not s3_path:
+            log("S3 path is empty or None. Cannot proceed with data load.")
+            raise Exception(
+                "S3 path is empty or None. Cannot proceed with data load."
+            )
+        # AWS Credentials Stored on Airflow
+        aws_access_key = Variable.get("aws_access_key")
+        aws_secret_key = Variable.get("aws_secret_key")
+
+        snowflake_hook = SnowflakeHook(snowflake_conn_id="snowflake_default")
+        log(
+            f"Successfully connected to Snowflake"
+            f"using connection ID: {snowflake_hook}"
+        )
+
+        copy_query = f"""
+            COPY INTO country_database.raw_country_schema.country_data
+            FROM '{s3_path}'
+            FILE_FORMAT = (TYPE = 'PARQUET')
+            CREDENTIALS = (
+                AWS_KEY_ID = '{aws_access_key}'
+                AWS_SECRET_KEY = '{aws_secret_key}'
+            )
+            MATCH_BY_COLUMN_NAME = case_insensitive
+        """
+
+        log(f"Executing COPY query: {copy_query}")
+
+        result = snowflake_hook.run(copy_query)
+        log(f"Data load completed successfully. Query result: {result}")
+
+        if isinstance(result, list) and len(result) > 0:
+            rows_loaded = result[0].get("rows_loaded", 0)
+            log(f"Number of rows loaded into Snowflake: {rows_loaded}")
+
+    except Exception as e:
+        log(f"Failed to load data from S3 to Snowflake: {str(e)}")
+        raise Exception(f"Failed to load data from S3 to Snowflake: {str(e)}")
