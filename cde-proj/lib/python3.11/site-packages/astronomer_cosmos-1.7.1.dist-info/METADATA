@@ -1,0 +1,217 @@
+Metadata-Version: 2.3
+Name: astronomer-cosmos
+Version: 1.7.1
+Summary: Orchestrate your dbt projects in Airflow
+Project-URL: Homepage, https://github.com/astronomer/astronomer-cosmos
+Project-URL: Documentation, https://astronomer.github.io/astronomer-cosmos
+Project-URL: Source code, https://github.com/astronomer/astronomer-cosmos
+Author-email: Astronomer <humans@astronomer.io>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Keywords: airflow,apache-airflow,astronomer,dags,dbt
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Apache Airflow
+Classifier: Framework :: Apache Airflow :: Provider
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: aenum
+Requires-Dist: apache-airflow>=2.4.0
+Requires-Dist: attrs
+Requires-Dist: importlib-metadata; python_version < '3.8'
+Requires-Dist: jinja2>=3.0.0
+Requires-Dist: msgpack
+Requires-Dist: packaging>=22.0
+Requires-Dist: pydantic>=1.10.0
+Requires-Dist: typing-extensions; python_version < '3.8'
+Requires-Dist: virtualenv
+Provides-Extra: all
+Requires-Dist: apache-airflow-providers-amazon[s3fs]>=3.0.0; extra == 'all'
+Requires-Dist: apache-airflow-providers-google; extra == 'all'
+Requires-Dist: apache-airflow-providers-microsoft-azure; extra == 'all'
+Requires-Dist: dbt-athena; extra == 'all'
+Requires-Dist: dbt-bigquery; extra == 'all'
+Requires-Dist: dbt-clickhouse; extra == 'all'
+Requires-Dist: dbt-databricks; extra == 'all'
+Requires-Dist: dbt-exasol; extra == 'all'
+Requires-Dist: dbt-postgres; extra == 'all'
+Requires-Dist: dbt-redshift; extra == 'all'
+Requires-Dist: dbt-snowflake; extra == 'all'
+Requires-Dist: dbt-spark; extra == 'all'
+Requires-Dist: dbt-teradata; extra == 'all'
+Requires-Dist: dbt-vertica; extra == 'all'
+Requires-Dist: openlineage-airflow; extra == 'all'
+Requires-Dist: openlineage-integration-common!=1.15.0; extra == 'all'
+Provides-Extra: amazon
+Requires-Dist: apache-airflow-providers-amazon[s3fs]>=3.0.0; extra == 'amazon'
+Provides-Extra: aws-eks
+Requires-Dist: apache-airflow-providers-amazon>=8.0.0; extra == 'aws-eks'
+Provides-Extra: azure-container-instance
+Requires-Dist: apache-airflow-providers-microsoft-azure>=8.4.0; extra == 'azure-container-instance'
+Provides-Extra: dbt-all
+Requires-Dist: dbt-athena; extra == 'dbt-all'
+Requires-Dist: dbt-bigquery; extra == 'dbt-all'
+Requires-Dist: dbt-clickhouse; extra == 'dbt-all'
+Requires-Dist: dbt-databricks; extra == 'dbt-all'
+Requires-Dist: dbt-exasol; extra == 'dbt-all'
+Requires-Dist: dbt-postgres; extra == 'dbt-all'
+Requires-Dist: dbt-redshift; extra == 'dbt-all'
+Requires-Dist: dbt-snowflake; extra == 'dbt-all'
+Requires-Dist: dbt-spark; extra == 'dbt-all'
+Requires-Dist: dbt-teradata; extra == 'dbt-all'
+Requires-Dist: dbt-vertica; extra == 'dbt-all'
+Provides-Extra: dbt-athena
+Requires-Dist: apache-airflow-providers-amazon>=8.0.0; extra == 'dbt-athena'
+Requires-Dist: dbt-athena-community; extra == 'dbt-athena'
+Provides-Extra: dbt-bigquery
+Requires-Dist: dbt-bigquery; extra == 'dbt-bigquery'
+Provides-Extra: dbt-clickhouse
+Requires-Dist: dbt-clickhouse; extra == 'dbt-clickhouse'
+Provides-Extra: dbt-databricks
+Requires-Dist: dbt-databricks; extra == 'dbt-databricks'
+Provides-Extra: dbt-exasol
+Requires-Dist: dbt-exasol; extra == 'dbt-exasol'
+Provides-Extra: dbt-postgres
+Requires-Dist: dbt-postgres; extra == 'dbt-postgres'
+Provides-Extra: dbt-redshift
+Requires-Dist: dbt-redshift; extra == 'dbt-redshift'
+Provides-Extra: dbt-snowflake
+Requires-Dist: dbt-snowflake; extra == 'dbt-snowflake'
+Provides-Extra: dbt-spark
+Requires-Dist: dbt-spark; extra == 'dbt-spark'
+Provides-Extra: dbt-teradata
+Requires-Dist: dbt-teradata; extra == 'dbt-teradata'
+Provides-Extra: dbt-vertica
+Requires-Dist: dbt-vertica<=1.5.4; extra == 'dbt-vertica'
+Provides-Extra: docker
+Requires-Dist: apache-airflow-providers-docker>=3.5.0; extra == 'docker'
+Provides-Extra: docs
+Requires-Dist: apache-airflow-providers-cncf-kubernetes>=5.1.1; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-autoapi; extra == 'docs'
+Requires-Dist: sphinx-autobuild; extra == 'docs'
+Provides-Extra: gcp-cloud-run-job
+Requires-Dist: apache-airflow-providers-google>=10.11.0; extra == 'gcp-cloud-run-job'
+Provides-Extra: google
+Requires-Dist: apache-airflow-providers-google; extra == 'google'
+Provides-Extra: kubernetes
+Requires-Dist: apache-airflow-providers-cncf-kubernetes>=5.1.1; extra == 'kubernetes'
+Provides-Extra: microsoft
+Requires-Dist: apache-airflow-providers-microsoft-azure; extra == 'microsoft'
+Provides-Extra: openlineage
+Requires-Dist: openlineage-airflow; extra == 'openlineage'
+Requires-Dist: openlineage-integration-common!=1.15.0; extra == 'openlineage'
+Provides-Extra: tests
+Requires-Dist: packaging>=22.0; extra == 'tests'
+Requires-Dist: pre-commit; extra == 'tests'
+Requires-Dist: pytest-cov; extra == 'tests'
+Requires-Dist: pytest-describe; extra == 'tests'
+Requires-Dist: pytest-dotenv; extra == 'tests'
+Requires-Dist: pytest-split; extra == 'tests'
+Requires-Dist: pytest>=6.0; extra == 'tests'
+Requires-Dist: requests-mock; extra == 'tests'
+Requires-Dist: sqlalchemy-stubs; extra == 'tests'
+Requires-Dist: types-pytz; extra == 'tests'
+Requires-Dist: types-requests; extra == 'tests'
+Description-Content-Type: text/x-rst
+
+.. |fury| image:: https://badge.fury.io/py/astronomer-cosmos.svg
+    :target: https://badge.fury.io/py/astronomer-cosmos
+
+.. |ossrank| image:: https://img.shields.io/endpoint?url=https://ossrank.com/shield/2121
+    :target: https://ossrank.com/p/2121-astronomer-cosmos
+
+.. |downloads| image:: https://img.shields.io/pypi/dm/astronomer-cosmos.svg
+    :target: https://img.shields.io/pypi/dm/astronomer-cosmos
+
+.. |pre-commit| image:: https://results.pre-commit.ci/badge/github/astronomer/astronomer-cosmos/main.svg
+   :target: https://results.pre-commit.ci/latest/github/astronomer/astronomer-cosmos/main
+   :alt: pre-commit.ci status
+
+
+
+.. image:: https://raw.githubusercontent.com/astronomer/astronomer-cosmos/main/docs/_static/cosmos-logo.svg
+
+
+===========================================================
+
+|fury| |ossrank| |downloads| |pre-commit|
+
+Run your dbt Core projects as `Apache Airflow® <https://airflow.apache.org/>`_ DAGs and Task Groups with a few lines of code. Benefits include:
+
+- Run dbt projects against Airflow connections instead of dbt profiles
+- Native support for installing and running dbt in a virtual environment to avoid dependency conflicts with Airflow
+- Run tests immediately after a model is done to catch issues early
+- Utilize Airflow's data-aware scheduling to run models immediately after upstream ingestion
+- Turn each dbt model into a task/task group complete with retries, alerting, etc.
+
+Quickstart
+__________
+
+Check out the Getting Started guide on our `docs <https://astronomer.github.io/astronomer-cosmos/getting_started/index.html>`_. See more examples at `/dev/dags <https://github.com/astronomer/astronomer-cosmos/tree/main/dev/dags>`_ and at the `cosmos-demo repo <https://github.com/astronomer/cosmos-demo>`_.
+
+
+Example Usage
+___________________
+
+You can render a Cosmos Airflow DAG using the ``DbtDag`` class. Here's an example with the `jaffle_shop project <https://github.com/dbt-labs/jaffle_shop>`_:
+
+..
+   This renders on Github but not Sphinx:
+
+https://github.com/astronomer/astronomer-cosmos/blob/24aa38e528e299ef51ca6baf32f5a6185887d432/dev/dags/basic_cosmos_dag.py#L1-L42
+
+This will generate an Airflow DAG that looks like this:
+
+.. figure:: /docs/_static/jaffle_shop_dag.png
+
+
+Community
+_________
+- Join us on the Airflow `Slack <https://join.slack.com/t/apache-airflow/shared_invite/zt-1zy8e8h85-es~fn19iMzUmkhPwnyRT6Q>`_ at #airflow-dbt
+
+
+Changelog
+_________
+
+We follow `Semantic Versioning <https://semver.org/>`_ for releases.
+Check `CHANGELOG.rst <https://github.com/astronomer/astronomer-cosmos/blob/main/CHANGELOG.rst>`_
+for the latest changes.
+
+
+Contributing Guide
+__________________
+
+All contributions, bug reports, bug fixes, documentation improvements, enhancements are welcome.
+
+A detailed overview an how to contribute can be found in the `Contributing Guide <https://astronomer.github.io/astronomer-cosmos/contributing>`_.
+
+As contributors and maintainers to this project, you are expected to abide by the
+`Contributor Code of Conduct <https://github.com/astronomer/astronomer-cosmos/blob/main/CODE_OF_CONDUCT.md>`_.
+
+
+License
+_______
+
+`Apache License 2.0 <https://github.com/astronomer/astronomer-cosmos/blob/main/LICENSE>`_
+
+
+Privacy Notice
+______________
+
+This project follows `Astronomer's Privacy Policy <https://www.astronomer.io/privacy/>`_
+
+.. Tracking pixel for Scarf
+
+.. image:: https://static.scarf.sh/a.png?x-pxid=ae43a92a-5a21-4c77-af8b-99c2242adf93
+   :target: https://static.scarf.sh/a.png?x-pxid=ae43a92a-5a21-4c77-af8b-99c2242adf93

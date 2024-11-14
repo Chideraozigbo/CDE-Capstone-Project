@@ -1,0 +1,50 @@
+version: 2
+
+sources:
+  - name: raw
+    database: country_database
+    schema: raw_country_schema
+    tables:
+      - name: country_data
+        description: "Raw data table containing various attributes about countries worldwide."
+        columns:
+          - name: Country_Name
+            description: "The commonly recognized name of the country."
+            tests:
+              - not_null: {}
+              - unique: {}
+          - name: independence
+            description: "Date or year the country achieved independence, if applicable."
+          - name: united_nation_members
+            description: "Indicates whether the country is a United Nations member."
+          - name: start_of_week
+            description: "Specifies the designated start day of the week (e.g., Monday, Sunday)."
+          - name: official_name
+            description: "The official name of the country as recognized in international affairs."
+          - name: common_native_name
+            description: "Commonly used native name of the country in its primary language."
+          - name: currency_code
+            description: "ISO currency code used for transactions in the country (e.g., USD, EUR)."
+          - name: currency_name
+            description: "The official name of the currency used within the country."
+          - name: currency_symbol
+            description: "Symbol used for the country's currency (e.g., $, €)."
+          - name: country_code
+            description: "ISO country code (e.g., US, FR) that uniquely identifies each country."
+            tests:
+              - not_null: {}
+          - name: capital
+            description: "The capital city of the country."
+          - name: region
+            description: "Geopolitical region to which the country belongs (e.g., Europe, Asia)."
+          - name: subregion
+            description: "More specific subregion within the broader region (e.g., Northern Europe)."
+          - name: languages
+            description: "List of official or widely spoken languages in the country."
+          - name: area
+            description: "Total land area of the country in square kilometers."
+          - name: population
+            description: "Total population of the country as per the latest available data."
+          - name: continents
+            description: "Continent or continents on which the country is located."
+

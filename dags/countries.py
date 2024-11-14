@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+from cosmos import DbtTaskGroup, ProjectConfig, ProfileConfig, ExecutionConfig
 
 sys.path.append(
     os.path.join(os.path.dirname(os.path.dirname(__file__)), "scripts")

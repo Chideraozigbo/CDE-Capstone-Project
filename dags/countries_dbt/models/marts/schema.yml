@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: dim_country
+    description: Country dimension table
+    columns:
+      - name: country_key
+        description: Surrogate key for country
+        tests:
+          - unique
+          - not_null
+      - name: country_code
+        tests:
+          - unique: {}
+          - not_null: {}
+
+  - name: dim_currency
+    description: Currency dimension table
+    columns:
+      - name: currency_key
+        description: Surrogate key for currency
+        tests:
+          - unique: {}
+          - not_null: {}
+      - name: currency_code
+        tests:
+          - unique: {}
+          - not_null: {}
+
+  - name: dim_language
+    description: Language dimension table
+    columns:
+      - name: language_key
+        tests:
+          - unique: {}
+          - not_null: {}
+
+  - name: bridge_country_languages
+    description: Bridge for countries which speak different Language
+    columns:
+      - name: country_language_key
+        tests:
+          - unique: {}
+          - not_null: {}
+      - name: country_key
+        tests:
+          - not_null: {}
+          - relationships:
+              to: ref('dim_country')
+              field: country_key
+      - name: language_key
+        tests:
+          - not_null: {}
+          - relationships:
+              to: ref('dim_language')
+              field: language_key
+
+  - name: fct_country_stats
+    columns:
+      - name: country_key
+        tests:
+          - unique: {}
+          - not_null: {}
+          - relationships:
+              to: ref('dim_country')
+              field: country_key
