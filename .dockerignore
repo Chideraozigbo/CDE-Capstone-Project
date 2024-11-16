@@ -6,3 +6,14 @@ logs/
 .venv
 airflow.db
 airflow.cfg
+scripts/__pycache__
+.astro/
+cde-proj/
+include/
+plugins/
+credentials/
+tests/
+test.py
+cde-project/cde-proj
+cde-project/logs/dbt.log
+
