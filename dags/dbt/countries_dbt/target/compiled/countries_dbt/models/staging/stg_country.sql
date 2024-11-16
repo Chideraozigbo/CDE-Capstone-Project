@@ -21,7 +21,7 @@ WITH raw_countries AS(
         area,
         population,
         continents
-    from {{ source('raw', 'country_data') }}
+    from country_database.raw_country_schema.country_data
 )
 SELECT
     Country_Name,

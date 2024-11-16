@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+from cosmos import DbtTaskGroup, ProjectConfig, ProfileConfig, ExecutionConfig
 from cosmos.profiles import SnowflakeUserPasswordProfileMapping
 
 sys.path.append(
@@ -22,14 +22,26 @@ from scripts.main import (
     truncate_snowflake_table,
 )
 
+DBT_PROJECT_PATH = f"{os.environ['AIRFLOW_HOME']}/dags/dbt/countries_dbt"
+DBT_EXECUTABLE_PATH = f"{os.environ['AIRFLOW_HOME']}/dbt_venv/bin/dbt"
+
+
 profile_config = ProfileConfig(
     profile_name="default",
     target_name="dev",
     profile_mapping=SnowflakeUserPasswordProfileMapping(
-        conn_id="snowflake_conn", 
-        profile_args={"database": "dbt_db", "schema": "dbt_schema"},
-    )
+        conn_id="snowflake_default1",
+        profile_args={
+            "database": "country_database",
+            "schema": "raw_country_schema",
+        },
+    ),
 )
+
+execution_config = ExecutionConfig(
+    dbt_executable_path=DBT_EXECUTABLE_PATH,
+)
+
 
 # Define the DAG
 default_args = {
@@ -92,6 +104,16 @@ load_snowflake_table_task = PythonOperator(
 )
 
 
+dbt_tg = DbtTaskGroup(
+    group_id="transform_data",
+    project_config=ProjectConfig(DBT_PROJECT_PATH),
+    profile_config=profile_config,
+    execution_config=execution_config,
+    operator_args={"install_deps": True},
+    default_args=default_args,
+    dag=countries_dag,
+)
+
 (
     extract_task
     >> raw_upload_task
@@ -100,4 +122,5 @@ load_snowflake_table_task = PythonOperator(
     >> cleaned_upload_task
     >> truncate_table_task
     >> load_snowflake_table_task
+    >> dbt_tg
 )

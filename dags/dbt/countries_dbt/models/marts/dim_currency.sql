@@ -12,8 +12,7 @@
 
 {{ config(materialized='table') }}
 WITH currency_base AS (
-    SELECT DISTINCT
-        currency_code,
+    SELECT DISTINCT currency_code,
         currency_name,
         currency_symbol
     FROM {{ ref('stg_country') }}
