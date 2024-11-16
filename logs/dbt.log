@@ -1,0 +1,68 @@
+<<<<<<< HEAD
+[0m00:39:51.759179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ef7f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f20850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f21410>]}
+
+
+============================== 00:39:51.763155 | 699b99da-e2f8-43b1-b85b-02daab533a49 ==============================
+[0m00:39:51.763155 [info ] [MainThread]: Running with dbt=1.8.8
+[0m00:39:51.763644 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/user/.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt init', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:40:05.001430 [debug] [MainThread]: Starter project path: /Users/user/Documents/CDE-Capstone-Project/cde-proj/lib/python3.11/site-packages/dbt/include/starter_project
+[0m00:40:05.015389 [info ] [MainThread]: 
+Your new dbt project "country_pipeline" was created!
+=======
+[0m10:13:28.383575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa84390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aaa6c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aaa7390>]}
+
+
+============================== 10:13:28.386351 | 21c6a004-0c67-4d52-b868-68f4a15f3848 ==============================
+[0m10:13:28.386351 [info ] [MainThread]: Running with dbt=1.8.8
+[0m10:13:28.386952 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt init', 'debug': 'False', 'profiles_dir': '/Users/user/.dbt', 'empty': 'None', 'static_parser': 'True', 'log_path': 'logs', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'no_print': 'None', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_format': 'default', 'target_path': 'None', 'warn_error': 'None', 'write_json': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False'}
+[0m10:13:50.363665 [debug] [MainThread]: Starter project path: /opt/anaconda3/lib/python3.11/site-packages/dbt/include/starter_project
+[0m10:13:50.377732 [info ] [MainThread]: 
+Your new dbt project "countries_dbt" was created!
+>>>>>>> 2a0fb2d2 (update)
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+<<<<<<< HEAD
+[0m00:40:05.016178 [info ] [MainThread]: Setting up your profile.
+[0m00:41:49.552074 [info ] [MainThread]: Profile country_pipeline written to /Users/user/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m00:41:49.571500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f201d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103cd08d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101420590>]}
+[0m00:41:49.575291 [debug] [MainThread]: Flushing usage events
+=======
+[0m10:13:50.378959 [info ] [MainThread]: Setting up your profile.
+[0m10:15:23.684395 [info ] [MainThread]: Profile countries_dbt written to /Users/user/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:15:23.714308 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 115.41004, "process_user_time": 2.748185, "process_kernel_time": 1.330284, "process_mem_max_rss": "171360256", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m10:15:23.715503 [debug] [MainThread]: Command `dbt init` succeeded at 10:15:23.715302 after 115.41 seconds
+[0m10:15:23.716648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aaa71d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1433f54d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a93fdd0>]}
+[0m10:15:23.717244 [debug] [MainThread]: Flushing usage events
+[0m10:15:34.274845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094f9a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109549b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10956bad0>]}
+
+
+============================== 10:15:34.277482 | ce881030-e3e1-43b4-9746-ce72fe707baa ==============================
+[0m10:15:34.277482 [info ] [MainThread]: Running with dbt=1.8.8
+[0m10:15:34.278066 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'indirect_selection': 'eager', 'write_json': 'True', 'quiet': 'False', 'log_path': 'logs', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'cache_selected_only': 'False', 'version_check': 'True', 'profiles_dir': '/Users/user/.dbt', 'fail_fast': 'False', 'printer_width': '80', 'debug': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'use_colors': 'True', 'static_parser': 'True', 'warn_error': 'None', 'target_path': 'None'}
+[0m10:15:34.290242 [info ] [MainThread]: dbt version: 1.8.8
+[0m10:15:34.290674 [info ] [MainThread]: python version: 3.11.7
+[0m10:15:34.291047 [info ] [MainThread]: python path: /opt/anaconda3/bin/python
+[0m10:15:34.291302 [info ] [MainThread]: os info: macOS-14.4.1-arm64-arm-64bit
+[0m10:15:35.221006 [info ] [MainThread]: Using profiles dir at /Users/user/.dbt
+[0m10:15:35.221432 [info ] [MainThread]: Using profiles.yml file at /Users/user/.dbt/profiles.yml
+[0m10:15:35.221670 [info ] [MainThread]: Using dbt_project.yml file at /Users/user/Documents/cde_dbt/dbt_project.yml
+[0m10:15:35.221956 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m10:15:35.223632 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.0218534, "process_user_time": 2.420342, "process_kernel_time": 0.952537, "process_mem_max_rss": "181256192", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m10:15:35.224031 [debug] [MainThread]: Command `dbt debug` failed at 10:15:35.223961 after 1.02 seconds
+[0m10:15:35.224307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10956ba90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094fae50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12e4f39d0>]}
+[0m10:15:35.224588 [debug] [MainThread]: Flushing usage events
+>>>>>>> 2a0fb2d2 (update)

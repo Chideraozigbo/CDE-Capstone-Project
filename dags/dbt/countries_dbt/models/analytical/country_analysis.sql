@@ -32,7 +32,7 @@ WITH country_detail AS (
         f.language_diversity,
         cur.currency_name,
         cur.currency_symbol,
-        ARRAY_AGG(DISTINCT l.language) as spoken_languages
+        l.language
     FROM {{ ref('dim_country') }} c
     LEFT JOIN {{ ref('fct_country_stats') }} f 
         ON c.country_key = f.country_key
