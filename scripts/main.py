@@ -1,7 +1,5 @@
 from airflow.models import Variable
 from airflow.providers.snowflake.hooks.snowflake import SnowflakeHook
-import os
-import subprocess
 
 from .download import extract_country_data, get_json_data_from_s3
 from .extract import extract_data, log
@@ -164,10 +162,10 @@ def load_s3_to_snowflake(**kwargs):
 #         # Call dbt directly, assuming it's installed globally
 #         result = subprocess.run(
 #             [
-#                 "dbt", 
+#                 "dbt",
 #                 "run",
 #                 "--project-dir",
-#                 "/usr/local/airflow/dags/countries_dbt",  
+#                 "/usr/local/airflow/dags/countries_dbt",
 #             ],
 #             capture_output=True,
 #             text=True,
