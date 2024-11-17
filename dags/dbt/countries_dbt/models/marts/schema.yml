@@ -1,66 +1,128 @@
 version: 2
 
 models:
-  - name: dim_country
-    description: Country dimension table
+  - name: bridge_country_languages
+    description: >
+      This model generates a unique mapping of countries and their languages 
+      by creating surrogate keys for each combination of `country_code` and `language`.
     columns:
-      - name: country_key
-        description: Surrogate key for country
+      - name: country_id
+        description: Surrogate key for the country.
         tests:
-          - unique
           - not_null
-      - name: country_code
+          - unique
+      - name: language_id
+        description: Surrogate key for the language.
         tests:
-          - unique: {}
-          - not_null: {}
+          - not_null
+          - unique
+
+  - name: dim_country
+    description: >
+      This dimension table contains detailed information about countries, including
+      their name, region, subregion, capital, and other metadata.
+    columns:
+      - name: country_id
+        description: Surrogate key for the country.
+        tests:
+          - not_null
+          - unique
+      - name: country_name
+        description: Official name of the country.
+        tests:
+          - not_null
+      - name: region
+        description: The region to which the country belongs.
+      - name: subregion
+        description: The subregion to which the country belongs.
 
   - name: dim_currency
-    description: Currency dimension table
+    description: >
+      This dimension table contains information about currencies, including their
+      code, name, and symbol.
     columns:
-      - name: currency_key
-        description: Surrogate key for currency
+      - name: currency_id
+        description: Surrogate key for the currency.
         tests:
-          - unique: {}
-          - not_null: {}
+          - not_null
+          - unique
       - name: currency_code
+        description: The code of the currency.
         tests:
-          - unique: {}
-          - not_null: {}
+          - not_null
+      - name: currency_name
+        description: The name of the currency.
+      - name: currency_symbol
+        description: The symbol for the currency.
 
   - name: dim_language
-    description: Language dimension table
+    description: >
+      This dimension table contains unique languages spoken in countries.
     columns:
-      - name: language_key
+      - name: language_id
+        description: Surrogate key for the language.
         tests:
-          - unique: {}
-          - not_null: {}
+          - not_null
+          - unique
+      - name: language
+        description: The name of the language.
+        tests:
+          - not_null
+          - unique
 
-  - name: bridge_country_languages
-    description: Bridge for countries which speak different Language
+  - name: fact_country_metric
+    description: >
+      This fact table combines key metrics about countries, such as population density,
+      language diversity, and currency, to facilitate analytical queries.
     columns:
-      - name: country_language_key
+      - name: country_id
+        description: Surrogate key for the country.
         tests:
-          - unique: {}
-          - not_null: {}
-      - name: country_key
+          - not_null
+      - name: population
+        description: Total population of the country.
         tests:
-          - not_null: {}
+          - not_null
           - relationships:
-              to: ref('dim_country')
-              field: country_key
-      - name: language_key
+              to: dim_country.country_id
+      - name: area
+        description: Total area of the country in square kilometers.
+      - name: population_density
+        description: Population density (population per square kilometer).
+      - name: density_category
+        description: >
+          A categorical representation of population density (Low, Medium, High).
+      - name: language_count
+        description: Number of languages spoken in the country.
+      - name: language_diversity_category
+        description: >
+          A categorical representation of language diversity 
+          (Monolingual, Moderately Multilingual, Highly Multilingual).
+      - name: currency_id
+        description: Surrogate key for the currency used by the country.
         tests:
-          - not_null: {}
           - relationships:
-              to: ref('dim_language')
-              field: language_key
+              to: dim_currency.currency_id
 
-  - name: fct_country_stats
+  - name: dim_language
+    description: >
+      Contains details about languages spoken across countries.
     columns:
-      - name: country_key
+      - name: language_id
+        description: Unique identifier for a language.
         tests:
-          - unique: {}
-          - not_null: {}
-          - relationships:
-              to: ref('dim_country')
-              field: country_key
+          - not_null
+          - unique
+      - name: language
+        description: Language name.
+        tests:
+          - not_null
+
+tests:
+  - name: validate_population_density
+    description: >
+      Validates that population density is greater than zero for all countries
+      with a population and area.
+    model: fact_country_metric
+    test: expression
+    condition: "population_density > 0 OR (population IS NULL AND area IS NULL)"

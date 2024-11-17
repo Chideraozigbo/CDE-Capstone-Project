@@ -4,41 +4,27 @@
 
 WITH raw_countries AS(
     SELECT
-        Country_Name,
-        independence,
-        united_nation_members,
-        start_of_week,
-        official_name,
-        common_native_name,
-        currency_code,
-        currency_name,
-        currency_symbol,
-        country_code,
-        capital,
-        region,
-        subregion,
-        languages,
-        area,
-        population,
-        continents
+        
+    md5(cast(coalesce(cast(country_name as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT))
+ as country_id,
+        TRIM(Country_Name) AS country_name,
+        TRIM(independence) AS independence,
+        TRIM(united_nation_members) AS united_nation_members,
+        TRIM(start_of_week) AS start_of_week,
+        TRIM(official_name) AS official_name,
+        TRIM(common_native_name) AS common_native_name,
+        TRIM(currency_code) AS currency_code,
+        TRIM(currency_name) AS currency_name,
+        TRIM(currency_symbol) AS currency_symbol,
+        TRIM(country_code) AS country_code,
+        TRIM(capital) AS capital,
+        TRIM(region) AS region,
+        TRIM(subregion) AS subregion,
+        TRIM(area) AS area,
+        TRIM(population) AS population,
+        TRIM(continents) AS continents
     from country_database.raw_country_schema.country_data
 )
 SELECT
-    Country_Name,
-    independence,
-    united_nation_members,
-    start_of_week,
-    official_name,
-    common_native_name,
-    currency_code,
-    currency_name,
-    currency_symbol,
-    country_code,
-    capital,
-    region,
-    subregion,
-    languages,
-    area,
-    population,
-    continents
+    *
 FROM raw_countries

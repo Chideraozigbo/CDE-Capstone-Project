@@ -4,9 +4,10 @@
 
 WITH raw_countries AS(
     SELECT
+        {{ generate_business_key(['country_name']) }} as country_id,
         TRIM(Country_Name) AS country_name,
         TRIM(independence) AS independence,
-        TRIM(united_nation_members) AS union_nation_members,
+        TRIM(united_nation_members) AS united_nation_members,
         TRIM(start_of_week) AS start_of_week,
         TRIM(official_name) AS official_name,
         TRIM(common_native_name) AS common_native_name,
@@ -18,7 +19,7 @@ WITH raw_countries AS(
         TRIM(region) AS region,
         TRIM(subregion) AS subregion,
         TRIM(area) AS area,
-        TRIIM(population) AS population,
+        TRIM(population) AS population,
         TRIM(continents) AS continents
     from {{ source('raw', 'country_data') }}
 )

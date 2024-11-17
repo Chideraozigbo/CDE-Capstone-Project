@@ -11,6 +11,7 @@ WITH base_stats AS (
     SELECT
         md5(cast(coalesce(cast(c.country_code as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as country_key,
         md5(cast(coalesce(cast(c.currency_code as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as currency_key,
+        md5(cast(coalesce(cast(language as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as language_key
         c.country_code,
         c.population,
         c.independence,

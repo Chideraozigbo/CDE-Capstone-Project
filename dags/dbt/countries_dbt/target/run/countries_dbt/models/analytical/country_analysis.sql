@@ -4,7 +4,23 @@
 
         create or replace transient table country_database._analytical_schema.country_analysis
          as
-        (WITH country_detail AS (
+        (-- This model aggregates and enriches country-level details by joining data from 
+-- the `dim_country`, `fct_country_stats`, `dim_currency`, `bridge_country_languages`, 
+-- and `dim_language` tables. It generates comprehensive country details, including:
+-- - Basic information: country name, region, subregion, capital, population, area.
+-- - Country statistics: population density, density category, independence status,
+--   United Nations membership, language count, and language diversity.
+-- - Currency details: currency name and symbol.
+-- - Languages spoken in the country, aggregated as an array of distinct languages.
+-- Additionally, it computes:
+-- - `avg_population_by_region`: Average population per region.
+-- - `avg_density_by_continent`: Average population density per continent.
+-- - `avg_languages_by_region`: Average number of languages spoken per region.
+-- - `population_rank_in_region`: The rank of countries based on population within their region.
+-- - `area_rank_in_continent`: The rank of countries based on area within their continent.
+
+
+WITH country_detail AS (
     SELECT 
         c.country_key,
         c.country_name,
@@ -22,7 +38,7 @@
         f.language_diversity,
         cur.currency_name,
         cur.currency_symbol,
-        ARRAY_AGG(DISTINCT l.language) as spoken_languages
+        l.language
     FROM country_database._mart_schema.dim_country c
     LEFT JOIN country_database._mart_schema.fct_country_stats f 
         ON c.country_key = f.country_key

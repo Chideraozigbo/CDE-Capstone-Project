@@ -32,7 +32,7 @@ WITH country_detail AS (
         f.language_diversity,
         cur.currency_name,
         cur.currency_symbol,
-        ARRAY_AGG(DISTINCT l.language) as spoken_languages
+        l.language
     FROM country_database._mart_schema.dim_country c
     LEFT JOIN country_database._mart_schema.fct_country_stats f 
         ON c.country_key = f.country_key

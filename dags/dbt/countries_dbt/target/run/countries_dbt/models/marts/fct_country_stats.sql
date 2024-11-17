@@ -4,11 +4,20 @@
 
         create or replace transient table country_database._mart_schema.fct_country_stats
          as
-        (
+        (-- This model creates a table that combines various country statistics from `stg_country` and `stg_country_languages`.
+-- It includes fields such as population, area, independence status, and United Nations membership,
+-- and calculates additional metrics like population density and language diversity.
+-- Surrogate keys for `country_key` and `currency_key` are generated using the `dbt_utils.generate_surrogate_key` macro.
+-- The table categorizes countries by population density (Low, Medium, or High Density) and language diversity (Single Language, Bilingual, Multilingual, or Unknown).
+-- Timestamp of record creation is stored in `created_at`.
+
+
+
 WITH base_stats AS (
     SELECT
         md5(cast(coalesce(cast(c.country_code as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as country_key,
         md5(cast(coalesce(cast(c.currency_code as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as currency_key,
+        md5(cast(coalesce(cast(language as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as language_key
         c.country_code,
         c.population,
         c.independence,

@@ -1,5 +1,6 @@
 apache-airflow-providers-snowflake 
 astronomer-cosmos
+protobuf==3.20.3
 black                              
 boto3                              
 dbt-snowflake                      
@@ -9,3 +10,5 @@ keyring
 msgpack                            
 pip                                
 pipreqs                            
+
+astro-run-dag # This package is needed for the astro run command. It will be removed before a deploy

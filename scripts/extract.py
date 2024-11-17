@@ -32,8 +32,9 @@ def log(message):
     Returns:
     None
     """
-    current_date = now.strftime(time_format)
+    
     with open(log_dir, "a") as f:
+        current_date = now.strftime(time_format)
         f.write(f"{current_date} - {message}\n")
 
 

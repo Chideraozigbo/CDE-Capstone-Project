@@ -8,20 +8,21 @@
 
 WITH country_base AS (
     SELECT 
+        country_id,
         country_code,
         Country_Name,
         official_name,
         common_native_name,
+        independence,
+        united_nation_members,
         capital,
         region,
         subregion,
-        area,
         continents,
         start_of_week
     FROM country_database._staging_schema.stg_country
 )
 SELECT 
-    md5(cast(coalesce(cast(country_code as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as country_key,
     *,
     current_timestamp() as created_at,
     'N/A' as record_status

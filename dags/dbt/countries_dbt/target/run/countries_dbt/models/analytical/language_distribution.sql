@@ -4,7 +4,23 @@
 
         create or replace transient table country_database._analytical_schema.language_distribution
          as
-        (WITH language_stats AS (
+        (-- This model aggregates language statistics by joining data from the `dim_language`, 
+-- `bridge_country_languages`, `dim_country`, and `fct_country_stats` tables. It generates 
+-- key language statistics including:
+-- - `speaking_countries`: The number of distinct countries that speak a particular language.
+-- - `total_speakers_potential`: The sum of populations of countries that speak the language.
+-- - `regions_present`: A list of regions where the language is spoken, aggregated and ordered.
+-- Additionally, it calculates:
+-- - `pct_countries_speaking`: The percentage of countries that speak the language relative to 
+--   the total number of distinct countries.
+-- - `distribution_category`: A categorical label that describes the spread of the language:
+--   - 'Unique to one country' for languages spoken in only one country.
+--   - 'Regional' for languages spoken in up to three countries.
+--   - 'Multi-regional' for languages spoken in up to ten countries.
+--   - 'Widespread' for languages spoken in more than ten countries.
+
+
+WITH language_stats AS (
     SELECT 
         l.language,
         COUNT(DISTINCT bl.country_code) AS speaking_countries,
