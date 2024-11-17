@@ -10,7 +10,7 @@ RUN python -m venv dbt_venv && source dbt_venv/bin/activate && \
 
 ENV AIRFLOW__CORE__LOAD_EXAMPLES=False
 
-USER astro
+USER root
 
 
 
