@@ -1,6 +1,8 @@
 {{ config(materialized="view") }}
 
+with population_analysis as (
 SELECT 
+    DISTINCT
     d.country_name,
     f.population,
     f.area,
@@ -17,3 +19,8 @@ JOIN {{ ref('dim_country') }} d
     ON f.country_id = d.country_id
 LEFT JOIN {{ ref('dim_currency') }} c
     ON f.currency_id = c.currency_id
+)
+
+select 
+    distinct *
+from population_analysis

@@ -47,5 +47,5 @@ jobs:
         VERSION: ${{ steps.version.outputs.version }}
       run: |
         # Build and push with version tag
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:v$VERSION .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:v$VERSION
+        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$VERSION .
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$VERSION

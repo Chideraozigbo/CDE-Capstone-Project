@@ -104,20 +104,6 @@ models:
           - relationships:
               to: dim_currency.currency_id
 
-  - name: dim_language
-    description: >
-      Contains details about languages spoken across countries.
-    columns:
-      - name: language_id
-        description: Unique identifier for a language.
-        tests:
-          - not_null
-          - unique
-      - name: language
-        description: Language name.
-        tests:
-          - not_null
-
 tests:
   - name: validate_population_density
     description: >
