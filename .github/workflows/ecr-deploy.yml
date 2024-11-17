@@ -21,29 +21,14 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      with:
-        fetch-depth: 0  # Needed to get all tags
 
-    - name: Get next version
-      id: get-version
+    - name: Generate version number
+      id: version
       run: |
-        # Get the latest tag or start at 1.0 if no tags exist
-        LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "1.0")
-        
-        # Extract major and minor versions
-        MAJOR=$(echo $LATEST_TAG | cut -d. -f1)
-        MINOR=$(echo $LATEST_TAG | cut -d. -f2)
-        
-        # Increment minor version
-        NEW_MINOR=$((MINOR + 1))
-        NEW_TAG="${MAJOR}.${NEW_MINOR}"
-        
-        # Set output for later steps
-        echo "version=${NEW_TAG}" >> $GITHUB_OUTPUT
-        
-        # Create and push new tag
-        git tag $NEW_TAG
-        git push origin $NEW_TAG
+        # Using GitHub Actions run number with minor version
+        VERSION="1.${GITHUB_RUN_NUMBER}"
+        echo "version=${VERSION}" >> $GITHUB_OUTPUT
+        echo "Generated version: ${VERSION}"
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v4
@@ -59,7 +44,7 @@ jobs:
     - name: Build, tag, and push image to Amazon ECR
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        VERSION: ${{ steps.get-version.outputs.version }}
+        VERSION: ${{ steps.version.outputs.version }}
       run: |
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$VERSION .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$VERSION
