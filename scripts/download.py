@@ -21,6 +21,21 @@ SECRET_ACCESS_KEY = config["AWS"]["SECRET_ACCESS_KEY"]
 
 
 def get_json_data_from_s3(bucket_name, object_s3_path):
+    """
+    Retrieves JSON data from an S3 bucket and parses it.
+
+    This function establishes a connection to AWS S3 using provided credentials,
+    fetches a specified object from the given bucket, and attempts to parse its
+    content as JSON.
+
+    Parameters:
+    bucket_name (str): The name of the S3 bucket containing the desired object.
+    object_s3_path (str): The S3 key (path) of the object to be retrieved.
+
+    Returns:
+    dict or None: The parsed JSON data as a Python dictionary if successful,
+                  or None if an error occurs during retrieval or parsing.
+    """
     try:
         # Initialize S3 client
         session = boto3.Session(
@@ -43,6 +58,16 @@ def get_json_data_from_s3(bucket_name, object_s3_path):
 
 
 def extract_country_data(json_data):
+    """
+    Extracts country-specific data from a given JSON object and saves it as a Parquet file.
+
+    Parameters:
+    json_data (dict): A JSON object containing country data.
+
+    Returns:
+    tuple: A tuple containing the name of the saved Parquet file and its file path.
+           If no data was extracted or an error occurred during saving, returns (None, None).
+    """
     country_data = []
     log("Starting data extraction for countries")
 

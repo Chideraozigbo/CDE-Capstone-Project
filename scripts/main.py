@@ -157,21 +157,4 @@ def load_s3_to_snowflake(**kwargs):
         raise Exception(f"Failed to load data from S3 to Snowflake: {str(e)}")
 
 
-# def run_dbt_transformations():
-#     try:
-#         # Call dbt directly, assuming it's installed globally
-#         result = subprocess.run(
-#             [
-#                 "dbt",
-#                 "run",
-#                 "--project-dir",
-#                 "/usr/local/airflow/dags/countries_dbt",
-#             ],
-#             capture_output=True,
-#             text=True,
-#             check=True,
-#         )
-#         log(f"DBT transformation successful: {result.stdout}")
-#     except subprocess.CalledProcessError as e:
-#         log(f"DBT transformation failed: {e.stderr}")
-#         raise Exception(f"DBT transformation failed: {e.stderr}")
+

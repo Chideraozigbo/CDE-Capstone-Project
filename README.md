@@ -9,9 +9,258 @@ A travel Agency reached out to CDE, their business model involves recommending t
 
 This project implements a data platform for a travel agency to process and analyze country data for tourist location recommendations. The platform extracts data from the Country REST API, stores it in a cloud-based data lake, and transforms it for predictive analytics.
 
-## Architecture
+## Project Setup Guide
 
-## Key Components
+This guide will walk you through setting up the project environment, including repository setup, Astro CLI configuration, and credential management in Airflow.
+
+### Prerequisites
+- Python 3.11.5 or higher
+- Git
+- AWS Account with appropriate permissions
+- Snowflake Account
+- Docker Desktop
+- [Astro CLI](https://docs.astronomer.io/astro/cli/install-cli)
+
+#### Step 1: Clone the Repository
+
+```bash
+# Clone the repository
+git clone <your-repository-url>
+
+# Navigate to project directory
+cd CDE-Capstone-Project
+```
+
+#### Step 2: Initialize Astro Project
+
+```bash
+# Initialize a new Astro project
+astro dev init
+
+# Start the Astro development environment
+astro dev start
+```
+
+This will:
+- Create necessary Astro project files
+- Set up a local Airflow environment
+- Start Airflow services in Docker containers
+
+#### Step 3: Create Credentials Directory for Local Development
+
+```bash
+# Create credentials directory
+mkdir credentials
+```
+
+#### Step 4: Create and Configure config.ini
+
+Create a new file named `config.ini` in the credentials directory with AWS credentials:
+
+```ini
+[AWS]
+ACCESS_KEY_ID = your_access_key_here
+SECRET_ACCESS_KEY = your_secret_key_here
+```
+
+⚠️ **Security Note**: 
+- Never commit `config.ini` to version control
+- Add `credentials/config.ini` to your `.gitignore` file
+- This file is only for local development and testing
+
+#### Step 5: Configure Airflow Connections and Variables
+
+Once your Astro development environment is running, access the Airflow UI at `http://localhost:8080` (default credentials: admin/admin)
+
+### Set up Snowflake Connection
+1. Navigate to Admin → Connections
+2. Click "+"  to add a new connection
+3. Configure the Snowflake connection:
+   ```
+   Connection Id: snowflake_default1
+   Connection Type: Snowflake
+   Account: your-snowflake-account
+   Login: your-snowflake-username
+   Password: your-snowflake-password
+   Schema: your-schema
+   Warehouse: your-warehouse
+   Database: your-database
+   Role: your-role
+   ```
+
+### Set up AWS Variables
+1. Navigate to Admin → Variables
+2. Add the following variables:
+   ```
+   Key: aws_access_key_id
+   Value: your-aws-access-key
+
+   Key: aws_secret_access_key
+   Value: your-aws-secret-key
+
+   ```
+
+#### Step 6: Install Project Requirements
+
+```bash
+# Install packages in your Astro project
+astro dev python package-install requirements.txt
+```
+
+
+## Astro CLI Common Commands
+
+```bash
+# Start Airflow environment
+astro dev start
+
+# Stop Airflow environment
+astro dev stop
+
+# Restart Airflow environment
+astro dev restart
+
+# View logs
+astro dev logs
+
+# Access the Airflow container
+astro dev bash
+
+# Install Python packages
+astro dev python package-install <package-name>
+
+# Deploy to Astro (if using Astronomer)
+astro deploy
+```
+
+## DBT Setup in Astro Environment
+
+1. Create dbt project structure:
+```bash
+# Access the Airflow container
+astro dev bash
+
+# Navigate to dags directory
+cd dags
+
+# Create dbt project
+dbt init countries_dbt
+```
+
+2. Configure dbt profile in the Airflow container:
+```yaml
+# ~/.dbt/profiles.yml
+default:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: your-account
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: your-role
+      database: your-database
+      warehouse: your-warehouse
+      schema: your-schema
+      threads: 4
+```
+
+
+### Viewing Logs
+```bash
+# View all container logs
+astro dev logs
+
+# View specific service logs
+astro dev logs scheduler
+astro dev logs webserver
+```
+
+### Accessing Containers
+```bash
+# Access Airflow container
+astro dev bash
+
+# View running containers
+docker ps
+```
+
+## Additional Resources
+- [Astro CLI Documentation](https://docs.astronomer.io/astro/cli/overview)
+- [Apache Airflow Documentation](https://airflow.apache.org/docs/)
+- [DBT Documentation](https://docs.getdbt.com/)
+- [Cosmos Documentation](https://astronomer.github.io/astronomer-cosmos/)
+- [Snowflake Documentation](https://docs.snowflake.com/)
+
+
+## Data Warehouse Access Guide
+
+
+This guide provides information on accessing our Snowflake data warehouse environment. The warehouse contains processed data from our data pipeline and is optimized for analytical queries.
+
+### Connection Details
+
+#### Warehouse Information
+- **URL**: [https://mc47865.eu-west-1.snowflakecomputing.com](https://mc47865.eu-west-1.snowflakecomputing.com)
+- **Warehouse Name**: `COUNTRY_WAREHOUSE`
+- **Region**: EU West 1
+
+#### Authentication Credentials
+- **Username**: `guest`
+- **Password**: `guest`
+
+> ⚠️ **Security Note**: These are guest credentials with limited access. 
+
+### Connection Methods
+
+#### 1. Web Interface
+1. Navigate to [https://mc47865.eu-west-1.snowflakecomputing.com](https://mc47865.eu-west-1.snowflakecomputing.com)
+2. Enter the username: `guest`
+3. Enter the password: `guest`
+4. Select `COUNTRY_WAREHOUSE` from the warehouse dropdown
+
+#### 2. SQL Client Connection
+```sql
+-- Connection parameters
+account = 'mc47865.eu-west-1'
+warehouse = 'COUNTRY_WAREHOUSE'
+username = 'guest'
+password = 'guest'
+```
+
+#### 3. Python Connection
+```python
+from snowflake.connector import connect
+
+conn = connect(
+    account='mc47865.eu-west-1',
+    user='guest',
+    password='guest',
+    warehouse='COUNTRY_WAREHOUSE'
+)
+```
+
+### Access Limitations
+
+The guest account has:
+- Read-only access to specific schemas
+- Limited compute resources
+- Query timeout restrictions
+- No write permissions
+
+---
+
+*Note: This documentation is for demonstration purposes. In a production environment, credentials should never be exposed in documentation.*
+
+## Data Pipeline and CI/CD System Architecture
+
+This project implements a modern data pipeline that extracts data from external APIs, processes it through various stages of transformation, and loads it into a data warehouse. The system is built with cloud-native technologies and follows DevOps best practices with automated CI/CD pipelines
+
+### Architecture Diagram
+
+![Architecture Diagram](images/architecture.gif)
+
+### Key Components
 
 - Data Ingestion: REST API data extraction
 
@@ -24,9 +273,10 @@ This project implements a data platform for a travel agency to process and analy
 - Data Transformation: dbt
 - Infrastructure: Terraform
 - CI/CD: GitHub Actions
+- Container Registry: AWS ECR
 
 
-## Features
+### Features
 
 - Full API data extraction and storage in Parquet format
 - Processed data attributes include:
@@ -746,3 +996,107 @@ The analysis is based on data visualized through Tableau, incorporating:
 
 ---
 *Last Updated: November 17, 2024*
+
+## System Infrastructure Gallery
+
+
+This gallery provides visual documentation of our data infrastructure, pipeline processes, and deployment workflows. Each section demonstrates key components of our system architecture and operational processes.
+
+### Gallery Sections
+
+#### Data Warehouse Architecture
+![Warehouse Screenshot](images/snowflake_layers.png)
+*Figure 1: Snowflake Data Warehouse Layers - This screenshot illustrates the layered structure within the Snowflake data warehouse, showcasing the stages of data transformation from raw to cleaned and analytical layers. It emphasizes the organized flow of data for efficient querying and analysis.*
+
+Our data warehouse infrastructure showcases:
+- Optimized table structures and layers
+- Query performance monitoring
+
+
+#### Data Lake Organization
+![Data Lake Screenshot](images/s3_bucket.png)
+*Figure 1: S3 Bucket Image - This screenshot shows the configuration of an S3 bucket used in the data lake architecture.*
+
+![DataLake Screenshot](images/bucket_folders.png)
+*Figure 2: Data Lake Folder Structure - This screenshot illustrates the hierarchical folder structure within the data lake's S3 bucket. Each folder is organized by data type or processing stage, ensuring efficient data management and retrieval.*
+
+![DataLake Screenshot](images/raw_layer.png)
+*Figure 3: Raw Data Layer - This screenshot showcases the folder structure for the raw data layer in the data lake. It serves as the landing zone for unprocessed, original datasets directly ingested from source systems.*
+
+![DataLake Screenshot](images/cleaned_layer.png)
+*Figure 4: Cleaned Data Layer - This screenshot highlights the folder structure for the cleaned data layer in the data lake. It stores processed and transformed datas in parquet, organized for downstream analytics and querying.*
+
+
+The S3-based data lake demonstrates:
+- Raw data zone (JSON format)
+- Clean data zone (Parquet format)
+- Data partitioning strategy
+- Storage lifecycle management
+
+#### AWS ECR Deployments
+![ECR Screenshot](images/ECR_registry.png)
+*Figure 1: Amazon ECR Registry - This screenshot displays the Elastic Container Registry (ECR) in AWS, which contains repositories for storing Docker container images. It supports efficient container deployment for various applications.*
+
+![ECR Screenshot](images/ECR_builds.png)
+*Figure 2: Amazon ECR Build Process - This screenshot highlights the build details of container images in AWS Elastic Container Registry (ECR), showcasing the size, image tags, and other metadata of recent builds.*
+
+Our container registry shows:
+- Docker image versioning
+- Automated builds
+- Image tagging strategy
+- Security scanning results
+- Push/pull metrics
+
+#### GitHub Actions Workflows
+![Github Action Screenshot](images/code_linting.png)
+*Figure 1: GitHub Actions Code Linting Workflow - This screenshot shows the automated linting process configured in a GitHub Actions workflow. It validates code quality, ensuring adherence to predefined coding standards, with detailed output on passed and failed checks.*
+
+![Github Action Screenshot](images/deploy_run.png)
+
+*Figure 2: GitHub Actions Deployment Workflow - This screenshot captures the deployment pipeline execution using GitHub Actions. It highlights the deployment run, including triggered workflows, steps executed, and their respective statuses, ensuring successful deployment of the application or service.*
+
+
+CI/CD pipeline execution featuring:
+- Automated testing results
+- Code quality checks
+- Build processes
+- Deployment statistics
+
+#### Infrastructure Highlights
+
+Each component in our gallery represents a critical piece of our modern data infrastructure:
+
+| Component | Purpose | Key Features |
+|-----------|---------|--------------|
+| Data Warehouse | Central repository for processed data | - Structured storage<br>- Query optimization<br>- Performance monitoring |
+| Data Lake | Raw and cleaned data storage | - Multi-zone architecture<br>- Format optimization<br>- Data versioning |
+| ECR | Container registry | - Version control<br>- Security scanning<br>- Deployment tracking |
+| GitHub Actions | CI/CD automation | - Automated testing<br>- Quality assurance<br>- Deployment automation |
+
+### Technical Details
+
+#### Storage Formats
+- **Raw Zone**: JSON files maintaining original data structure
+- **Clean Zone**: Parquet files optimized for analytical queries
+- **Container Registry**: Docker images with specific tags
+
+#### Build Process
+1. Code changes trigger GitHub Actions
+2. Automated tests and quality checks run
+3. Docker images are built and tagged
+4. Images are pushed to ECR
+5. Deployment status is updated
+
+#### Access Controls
+- Role-based access to different components
+- Secure access to sensitive data
+- Audit logging for all operations
+
+### Monitoring Points
+
+Each gallery section includes monitoring for:
+- Performance metrics
+- Resource utilization
+- Error rates
+- Deployment success/failure rates
+
