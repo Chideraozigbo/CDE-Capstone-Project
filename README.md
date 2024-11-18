@@ -25,7 +25,7 @@ This guide will walk you through setting up the project environment, including r
 
 ```bash
 # Clone the repository
-git clone <your-repository-url>
+git clone https://github.com/Chideraozigbo/CDE-Capstone-Project.git
 
 # Navigate to project directory
 cd CDE-Capstone-Project
