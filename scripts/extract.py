@@ -39,6 +39,16 @@ def log(message):
 
 
 def extract_data(url):
+    """
+    This function attempts to fetch data from the specified URL and saves it as a JSON file.
+    If the fetch operation fails, it will retry up to a maximum number of times.
+
+    Parameters:
+    url (str): The URL from which to fetch the data.
+
+    Returns:
+    tuple: A tuple containing the name of the JSON file and its path, or (None, None) if the fetch operation fails after the maximum number of retries.
+    """
     for retry in range(max_retries):
         try:
             log(

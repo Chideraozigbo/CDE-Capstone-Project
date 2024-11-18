@@ -15,7 +15,6 @@ cde-proj/
 include/
 plugins/
 credentials/
-tests/
 test.py
 cde-project/cde-proj
 cde-project/logs/dbt.log

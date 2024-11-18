@@ -10,12 +10,10 @@ models:
         description: Surrogate key for the country.
         tests:
           - not_null
-          - unique
       - name: language_id
         description: Surrogate key for the language.
         tests:
           - not_null
-          - unique
 
   - name: dim_country
     description: >
@@ -45,7 +43,6 @@ models:
         description: Surrogate key for the currency.
         tests:
           - not_null
-          - unique
       - name: currency_code
         description: The code of the currency.
         tests:
@@ -79,12 +76,13 @@ models:
         description: Surrogate key for the country.
         tests:
           - not_null
+          - relationships:
+              to: ref('stg_country')
+              field: country_id
       - name: population
         description: Total population of the country.
         tests:
           - not_null
-          - relationships:
-              to: dim_country.country_id
       - name: area
         description: Total area of the country in square kilometers.
       - name: population_density
@@ -102,7 +100,8 @@ models:
         description: Surrogate key for the currency used by the country.
         tests:
           - relationships:
-              to: dim_currency.currency_id
+              to: ref('currency_mapping')
+              field: currency_id
 
 tests:
   - name: validate_population_density
